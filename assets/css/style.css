@@ -1,0 +1,400 @@
+/* ================= RESET & BASE ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(1, 37, 53);
+}
+
+body {
+    background-color: rgb(227, 225, 219);
+}
+
+/* ================= LOGO ================= */
+.logo {
+    margin-left: 20px;
+    color: #2fa69a;
+    font-weight: 500;
+    font-size: large;
+    border-radius: 10px;
+    box-shadow: #a6a62f 2px 2px;
+    margin-bottom: 10px;
+}
+
+/* ================= PHONE NUMBER ================= */
+.phone {
+    margin-top: 10px;
+    font-size: 30px;
+    color: #2bbad0;
+    margin-bottom: 10px;
+
+}
+
+.phone-number {
+    display: flex;
+    margin-top: 30px;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #5f554c;
+    padding-top: 5px;
+}
+
+.numéro {
+    list-style: none;
+}
+
+/* ================= BARRE DE RECHERCHE ================= */
+.search-container {
+    position: relative;
+    width: 350px;
+    max-width: 90%;
+    margin-bottom: 10px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 14px 55px 14px 20px;
+    border-radius: 40px;
+    border: 2px solid #cfcfcf;
+    background-color: #efefef;
+    font-size: 16px;
+    outline: none;
+    color: #666;
+}
+
+.search-container input::placeholder {
+    color: #9a9a9a;
+}
+
+.search-button {
+    position: absolute;
+    right: 20px;
+    top: 55%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: -5px;
+}
+
+/* ================= COMPTE ================= */
+.connexion-home {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.compte {
+    font-size: 30px;
+    color: #2bbad0;
+    margin-right: 10px;
+}
+
+.p-compte {
+    margin: 0;
+    color: #5f554c;
+    padding-top: 5px;
+    white-space: nowrap;
+    color: rgb(1, 37, 53);
+}
+
+/* ================= LANGUES ================= */
+.langue {
+    border-radius: 10px;
+    color: rgb(1, 37, 53);
+}
+
+.container-langue {
+    padding-right: 20px;
+}
+
+/* ================= DEVISE ================= */
+.devise {
+    border-radius: 10px;
+    color: rgb(1, 37, 53);
+}
+
+/* ================= MENU DE NAVIGATION ================= */
+.menu {
+  background-color: rgb(1, 37, 53);
+  padding: 5px;
+  cursor: pointer;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #bcbc2d;
+}
+
+.menu a:focus {
+  color: #bcbc2d;
+}
+
+/* ================= MAIN ================= */
+main {
+    margin: 0 auto; 
+}
+
+/* ================= BANNER ================= */
+.special-section img {
+    width:100%;
+    max-height: 750px;
+}
+
+/* ================= FORMULAIRE DE RECHERCHE ================= */ 
+
+.search-section {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    margin-top: -105px;  /* Pour remonter le formulaire */
+    padding: 0 3%;
+}
+
+
+/* CONTENEUR PRINCIPAL */
+
+.search-box {
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: /* 4 colonnes : What / Where / When / Who */
+        1.1fr
+        1.6fr
+        1.5fr
+        1.1fr;
+    column-gap: 35px;
+    padding: 22px 25px 18px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+}
+
+
+/* BLOC */
+
+.search-field {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Titres */
+
+.search-field h5 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(1, 37, 53);
+}
+
+
+/* Numéros 01 / 02 / 03 / 04 */
+
+.fw-bold {
+    color: #2bbad0;
+    font-weight: 700;
+}
+
+
+/* WHAT */
+
+.what-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(2, max-content); /*2 colonnes x 3 lignes au lieu de 6 lignes*/
+    column-gap: 14px;
+    row-gap: 7px;
+    margin-top: 4px;
+}
+
+
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+    font-size: 13px;
+    color: #012535;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+
+.form-check-input {
+    margin: 0;
+    width: 15px;
+    height: 15px;
+    border-color: #2bbad0;
+    cursor: pointer;
+}
+
+
+.form-check-input:checked {
+    background-color: #2bbad0;
+    border-color: #2bbad0;
+}
+
+
+/* INPUT */
+
+.form-controls {
+    width: 100%;
+    height: 38px;
+    padding: 7px 12px;
+    border: 1px solid #d9e0e4;
+    border-radius: 6px;
+    background: #ffffff;
+    font-size: 14px;
+    color: #34495e;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+
+.form-control:focus {
+    border-color: #2bbad0;
+    outline: none;
+    box-shadow:
+        0 0 0 2px rgba(43, 186, 208, 0.12);
+}
+
+
+.form-control::placeholder {
+    color: #71808c;
+}
+
+
+/* WHEN */
+
+.when-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+
+.date-field {
+    display: grid;
+    grid-template-columns: 95px 1fr;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.date-field label {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: #012535;
+}
+
+
+/* WHO */
+
+.who-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+
+/* BOUTON */
+
+.form-button {
+
+    grid-column: 1 / -1; /* le bouton vient en dessous et centrer */
+    justify-self: center;
+    width: 255px;
+    height: 40px;
+    margin-top: 8px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 25px;
+    background: #2bbad0;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-button:hover {
+    background: #20a9bf;
+    transform: translateY(-1px);
+    box-shadow:
+        0 5px 12px rgba(43, 186, 208, 0.25);
+}
+
+
+.form-button:active {
+    transform: translateY(0);
+}
+
+
+/* TABLETTE */
+
+@media (max-width: 1100px) {
+    .search-box {
+        grid-template-columns:
+            1fr 1fr;
+        gap: 20px;
+    }
+
+    .form-button {
+        grid-column: 1 / -1;
+        width: 255px;
+        justify-self: center;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+    .search-section {
+        margin-top: -30px;
+        padding: 0 15px;
+    }
+
+    .search-box {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        border-radius: 16px;
+        gap: 22px;
+    }
+
+    .what-grid {
+        grid-template-columns:
+            repeat(2, max-content);
+    }
+
+    .date-field {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    .form-button {
+        grid-column: 1;
+        width: 100%;
+    }
+}
