@@ -1,0 +1,144 @@
+/* ================= RESET & BASE ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(1, 37, 53);
+}
+
+body {
+    background-color: rgb(227, 225, 219);
+}
+
+/* ================= LOGO ================= */
+.logo {
+    margin-left: 20px;
+    color: #2fa69a;
+    font-weight: 500;
+    font-size: large;
+    border-radius: 10px;
+    box-shadow: #a6a62f 2px 2px;
+    margin-bottom: 10px;
+}
+
+/* ================= PHONE NUMBER ================= */
+.phone {
+    margin-top: 10px;
+    font-size: 30px;
+    color: #2bbad0;
+    margin-bottom: 10px;
+
+}
+
+.phone-number {
+    display: flex;
+    margin-top: 30px;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #5f554c;
+    padding-top: 5px;
+}
+
+.numéro {
+    list-style: none;
+}
+
+/* ================= BARRE DE RECHERCHE ================= */
+.search-container {
+    position: relative;
+    width: 350px;
+    max-width: 90%;
+    margin-bottom: 10px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 14px 55px 14px 20px;
+    border-radius: 40px;
+    border: 2px solid #cfcfcf;
+    background-color: #efefef;
+    font-size: 16px;
+    outline: none;
+    color: #666;
+}
+
+.search-container input::placeholder {
+    color: #9a9a9a;
+}
+
+.search-button {
+    position: absolute;
+    right: 20px;
+    top: 55%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: -5px;
+}
+
+/* ================= COMPTE ================= */
+.connexion-home {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.compte {
+    font-size: 30px;
+    color: #2bbad0;
+    margin-right: 10px;
+}
+
+.p-compte {
+    margin: 0;
+    color: #5f554c;
+    padding-top: 5px;
+    white-space: nowrap;
+    color: rgb(1, 37, 53);
+}
+
+/* ================= LANGUES ================= */
+.langue {
+    border-radius: 10px;
+    color: rgb(1, 37, 53);
+}
+
+.container-langue {
+    padding-right: 20px;
+}
+
+/* ================= DEVISE ================= */
+.devise {
+    border-radius: 10px;
+    color: rgb(1, 37, 53);
+}
+
+/* ================= MENU DE NAVIGATION ================= */
+
+.menu {
+  background-color: rgb(1, 37, 53);
+  padding: 5px;
+  cursor: pointer;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #bcbc2d;
+}
+
+.menu a:focus {
+  color: #bcbc2d;
+}
