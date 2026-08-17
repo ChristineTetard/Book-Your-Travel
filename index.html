@@ -19,6 +19,8 @@
 
 <body>
 
+    <!-- ================= HEADER ================= -->
+
     <header>
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
@@ -41,7 +43,7 @@
                 <form class="d-flex search-container" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search entire site here"
                         aria-label="Search" />
-                    <button class="btn search-button" type="submit">
+                    <button class="btn search-button" type="submit" aria-label="Search">
                         <svg viewBox="0 0 24 24" width="20" height="20">
                             <circle cx="11" cy="11" r="7" stroke="#9a9a9a" stroke-width="2" fill="none" />
                             <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="#9a9a9a" stroke-width="2"
@@ -60,12 +62,18 @@
 
                 <!-- Langues -->
                 <div class="container-langue">
-                    <select class="langue" name="langues" id="langues">FR
+                    <label for="language" class="visually-hidden">
+                        Langue
+                    </label>
+                    <select class="langue" name="language" id="language">FR
                         <option value="fr" aria-label="Français">FR</option>
                         <option value="en" aria-label="Anglais">EN</option>
                     </select>
                     <!-- Devise -->
-                    <select class="devise" name="devises" id="devises">FR
+                     <label for="currency" class="visually-hidden">
+                        Devise
+                    </label>
+                    <select class="devise" name="currency" id="currency">FR
                         <option value="euro" aria-label="Euro">€</option>
                         <option value="livre" aria-label="Livre">£</option>
                     </select>
@@ -83,7 +91,7 @@
                 <a class="nav-link" href="#">FLIGHTS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">FLIGHTS+HOTEL</a>
+                <a class="nav-link" href="#">FLIGHTS + HOTEL</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">SELF CATERING</a>
@@ -131,11 +139,12 @@
             <form class="search-box">
 
                 <!-- 01 WHAT -->
-                <div class="search-field what-field">
-
+                <fieldset class="search-field what-field">
+                    <legend>
                     <h5>
                         <span class="fw-bold">01</span> What ?
                     </h5>
+                    </legend>
 
                     <div class="what-grid">
 
@@ -170,12 +179,11 @@
                         </label>
 
                     </div>
-                </div>
+                </fieldset>
 
 
                 <!-- 02 WHERE -->
                 <div class="search-field">
-
                     <h5>
                         <span class="fw-bold">02</span> Where ?
                     </h5>
@@ -188,11 +196,9 @@
 
                 <!-- 03 WHEN -->
                 <div class="search-field">
-
                     <h5>
                         <span class="fw-bold">03</span> When?
                     </h5>
-
                     <div class="when-grid">
 
                         <div class="date-field">
@@ -218,11 +224,9 @@
 
                 <!-- 04 WHO -->
                 <div class="search-field">
-
                     <h5>
                         <span class="fw-bold">04</span> Who?
                     </h5>
-
                     <div class="who-grid">
 
                         <input type="number" class="form-controls" placeholder="Rooms" min="1"
@@ -239,12 +243,73 @@
                 </div>
 
 
-                <!-- BOUTON -->
+                <!-- Bouton -->
                 <button type="submit" class="form-button">
                     PROCEED TO RESULTS
                 </button>
 
             </form>
+        </section>
+
+
+        <!-- Promotion -->
+
+        <section>
+
+            <h2 class="promos">Explore our latest offers</h2>
+
+        <div class="promo container py-5">
+
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card card-p">
+                        <img src="assets/images/famille-plage.jpg" class="img-top" alt="">
+                        <div class="card-body">
+                            <h3 class="card-t-p">Winter beach escapes 30% off</h3>
+                            <hr>
+                            <button class="btn btn-promo">EXPLORE OUR DEALS</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card card-p">
+                        <img src="assets/images/tour-eiffel.jpg" class="img-top" alt="">
+                        <div class="card-body">
+                            <h3 class="card-t-p">Spend New Year's Eve In Paris</h3>
+                            <hr>
+                            <button class="btn btn-promo">MORE INFO</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card card-p">
+                        <img src="assets/images/terrasse-alpes.jpg" class="img-top" alt="">
+                        <div class="card-body">
+                            <h3 class="card-t-p card-ski">Skiing weekends in the Alpes</h3>
+                            <hr>
+                            <button class="btn btn-promo">EXPLORE OUR DEALS</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card card-p">
+                        <img src="assets/images/piscine-thailand.jpg" class="img-top" alt="">
+                        <div class="card-body">
+                            <h3 class="card-t-p">Our weekly top offer: Thailand</h3>
+                            <hr>
+                            <button class="btn btn-promo">MORE INFO</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+            <hr class="separation">
         </section>
 
 

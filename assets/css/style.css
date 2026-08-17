@@ -4,10 +4,11 @@
     padding: 0;
     box-sizing: border-box;
     color: rgb(1, 37, 53);
+    font-family: "Roboto", sans-serif, "Arial";
 }
 
 body {
-    background-color: rgb(227, 225, 219);
+    background-color: whitesmoke
 }
 
 /* ================= LOGO ================= */
@@ -25,7 +26,7 @@ body {
 .phone {
     margin-top: 10px;
     font-size: 30px;
-    color: #2bbad0;
+    color: #29a2b4;
     margin-bottom: 10px;
 
 }
@@ -208,7 +209,7 @@ main {
 /* Numéros 01 / 02 / 03 / 04 */
 
 .fw-bold {
-    color: #2bbad0;
+    color: rgb(99, 105, 34);
     font-weight: 700;
 }
 
@@ -241,14 +242,14 @@ main {
     margin: 0;
     width: 15px;
     height: 15px;
-    border-color: #2bbad0;
+    border-color: #012535;
     cursor: pointer;
 }
 
 
 .form-check-input:checked {
-    background-color: #2bbad0;
-    border-color: #2bbad0;
+    background-color: #012535;
+    border-color: #012535;
 }
 
 
@@ -297,14 +298,12 @@ main {
     gap: 8px;
 }
 
-
 .date-field label {
     margin: 0;
     font-size: 12px;
     font-weight: 600;
     color: #012535;
 }
-
 
 /* WHO */
 
@@ -313,7 +312,6 @@ main {
     flex-direction: column;
     gap: 7px;
 }
-
 
 /* BOUTON */
 
@@ -327,7 +325,7 @@ main {
     padding: 0 20px;
     border: none;
     border-radius: 25px;
-    background: #2bbad0;
+    background: rgb(1, 37, 53);
     color: #ffffff;
     font-size: 13px;
     font-weight: 600;
@@ -352,7 +350,6 @@ main {
 
 
 /* TABLETTE */
-
 @media (max-width: 1100px) {
     .search-box {
         grid-template-columns:
@@ -367,9 +364,7 @@ main {
     }
 }
 
-
 /* MOBILE */
-
 @media (max-width: 700px) {
     .search-section {
         margin-top: -30px;
@@ -398,3 +393,62 @@ main {
         width: 100%;
     }
 }
+
+/* ================= PROMO ================= */
+
+.card {
+    border-radius: 20px;
+}
+
+.img-top {
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* TITRE */
+.promos {
+    margin-top: 110px;
+    padding-left: 50px;
+    color: #012535;
+    font-weight: bold;
+}
+
+/* TEXTE */
+.card-t-p {
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card-ski {
+    font-size: 18px;
+}
+
+/* BOUTON */
+.btn-promo {
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    font-weight: bold;
+    background-color: rgb(1, 37, 53);
+    font-size: 13px;
+}
+
+.btn-promo:hover {
+    background: #20a9bf;
+    transform: translateY(-1px);
+    box-shadow:
+        0 5px 12px rgba(43, 186, 208, 0.25);
+    color: white;
+}
+
+.separation {
+    width: 95%;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+
