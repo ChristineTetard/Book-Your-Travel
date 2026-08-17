@@ -207,7 +207,7 @@
                                 Check-in date
                             </label>
 
-                            <input type="date" id="checkin" class="form-controls">
+                            <input type="date" id="checkin" name="checkin" class="form-controls">
                         </div>
 
                         <div class="date-field">
@@ -215,7 +215,7 @@
                                 Check-out date
                             </label>
 
-                            <input type="date" id="checkout" class="form-controls">
+                            <input type="date" id="checkout" name="checkout" class="form-controls">
                         </div>
 
                     </div>
@@ -230,13 +230,13 @@
                     </h5>
                     <div class="who-grid">
 
-                        <input type="number" class="form-controls" placeholder="Rooms" min="1"
+                        <input type="number" class="form-controls" placeholder="Rooms" name="rooms" id="rooms" min="1"
                             aria-label="Number of rooms">
 
-                        <input type="number" class="form-controls" placeholder="Adults" min="1"
+                        <input type="number" class="form-controls" placeholder="Adults" name="adults" id="adults" min="1"
                             aria-label="Number of adults">
 
-                        <input type="number" class="form-controls" placeholder="Children" min="0"
+                        <input type="number" class="form-controls" placeholder="Children" name="children" id="children" min="0"
                             aria-label="Number of children">
 
                     </div>
@@ -322,7 +322,7 @@
             <div class="row g-4 justify-content-center" id="cards-container">
 
                 <!-- CARD -->
-                <div class="col-12 col-md-6 col-lg-3">
+                <!-- <div class="col-12 col-md-6 col-lg-3">
                     <div class="card my-card">
 
                         <img src="assets/images/tour-eiffel.jpg" class="card-img-top" alt="">
@@ -362,10 +362,10 @@
 
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- CARD 2 -->
-                <div class="col-12 col-md-6 col-lg-3">
+                <!-- <div class="col-12 col-md-6 col-lg-3">
                     <div class="card my-card">
                         <img src="assets/images/Amsterdam2.jpg" class="card-img-top" alt="">
 
@@ -402,10 +402,10 @@
 
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- CARD 3 -->
-                <div class="col-12 col-md-6 col-lg-3">
+                <!-- <div class="col-12 col-md-6 col-lg-3">
                     <div class="card my-card">
                         <img src="assets/images/StPetersburg.jpg" class="card-img-top" alt="">
 
@@ -442,10 +442,10 @@
 
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- CARD 4 -->
-                <div class="col-12 col-md-6 col-lg-3">
+                <!-- <div class="col-12 col-md-6 col-lg-3">
                     <div class="card my-card">
                         <img src="assets/images/Prague.jpg" class="card-img-top" alt="">
 
@@ -482,7 +482,7 @@
 
                         </div>
                     </div> 
-                </div>
+                </div> -->
 
             </div>
         </section>
@@ -493,6 +493,8 @@
 
 
     </main>
+
+    <script src="assets/js/main.js"></script>
 
 </body>
 

@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     color: rgb(1, 37, 53);
-    font-family: "Roboto", sans-serif, "Arial";
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 body {
@@ -352,6 +352,8 @@ main {
 
 .card {
     border-radius: 20px;
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 .img-top {
@@ -413,6 +415,11 @@ main {
   padding-left: 50px;
   color: rgb(1, 37, 53);
   font-weight: bold;
+}
+
+.card {
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 .card-body {
@@ -513,7 +520,15 @@ main {
 }
 
 .special-price .btn-card {
-  background-color: #c0b2ac;
+  background-color: rgb(1, 37, 53);
+}
+
+.special-price .btn-card:hover {
+    background: #20a9bf;
+    transform: translateY(-1px);
+    box-shadow:
+        0 5px 12px rgba(43, 186, 208, 0.25);
+    color: white;
 }
 
 .my-card {
