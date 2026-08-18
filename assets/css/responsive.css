@@ -1,4 +1,4 @@
-/* ================= TABLETTE ================= */
+/* ================= INDEX TABLETTE ================= */
 
 @media (max-width: 1100px) {
     .search-box {
@@ -14,7 +14,7 @@
     }
 }
 
-/* ================= MOBILE ================= */
+/* ================= INDEX MOBILE ================= */
 
 @media (max-width: 700px) {
     .search-section {
@@ -43,4 +43,164 @@
         grid-column: 1;
         width: 100%;
     }
+}
+
+/* ================= HOTEL TABLETTE ================= */
+
+@media screen and (max-width: 992px) {
+    .breadcrumb-ol {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .container-bread {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .bread-2 {
+        margin-left: auto;
+    }
+
+    .breadcrumb-li,
+    .breadcrumb-li-end {
+        font-size: 13px;
+    }
+}
+
+/* ================= HOTEL MOBILE ================= */
+
+@media screen and (max-width: 576px) {
+    .breadcrumb-ol {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .container-bread {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .bread-2 {
+        margin-left: 0;
+    }
+
+    .breadcrumb-li,
+    .breadcrumb-li-end {
+        font-size: 12px;
+    }
+
+    .breadcrumb-ol p {
+        margin: 0;
+    }
+}
+
+/* =========================
+   TABLETTE
+========================= */
+
+@media screen and (max-width: 992px) {
+
+    .hotel-content {
+        grid-template-columns: 1fr;
+
+        width: 90%;
+    }
+
+
+    .carousel {
+        height: 400px;
+    }
+
+
+    .thumbnail {
+        width: 100px;
+        height: 70px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 576px) {
+
+    .hotel-content {
+        width: 95%;
+
+        margin: 30px auto;
+
+        gap: 20px;
+    }
+
+
+    .carousel {
+        height: 280px;
+
+        border-radius: 6px;
+    }
+
+
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+
+        font-size: 18px;
+    }
+
+
+    .prev {
+        left: 10px;
+    }
+
+
+    .next {
+        right: 10px;
+    }
+
+
+    /* Miniatures */
+
+    .thumbnails {
+        gap: 6px;
+
+        overflow-x: auto;
+
+        padding-bottom: 5px;
+    }
+
+
+    .thumbnail {
+        min-width: 65px;
+
+        width: 65px;
+        height: 50px;
+    }
+
+
+    /* Informations */
+
+    .information-box {
+        padding: 20px;
+    }
+
+
+    .information-box h1 {
+        font-size: 24px;
+    }
+
+
+    .information-box h2 {
+        font-size: 20px;
+    }
+
 }
