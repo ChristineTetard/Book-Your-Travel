@@ -52,7 +52,7 @@ previousButton.addEventListener("click", function () {
     showSlide(currentIndex);
 });
 
-// BOTUON NEXT
+// BOUTON NEXT
 
 nextButton.addEventListener("click", function () {
     currentIndex++;
@@ -63,7 +63,6 @@ nextButton.addEventListener("click", function () {
 
     showSlide(currentIndex);
 });
-
 
 // PETITES IMAGES
 
