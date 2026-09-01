@@ -1,0 +1,984 @@
+/* =========================================================
+   RESPONSIVE GLOBAL
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* =========================================================
+   INDEX - TABLETTE
+   701px → 1100px
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .search-box {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .form-button {
+        grid-column: 1 / -1;
+        width: 255px;
+        justify-self: center;
+    }
+}
+
+
+/* =========================================================
+   INDEX - MOBILE
+   0px → 700px
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .search-section {
+        margin-top: -30px;
+        padding: 0 15px;
+    }
+
+    .search-box {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        border-radius: 16px;
+        gap: 22px;
+    }
+
+    .what-grid {
+        grid-template-columns: repeat(2, max-content);
+    }
+
+    .date-field {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    .form-button {
+        grid-column: 1;
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   TABLETTE
+   701px → 1000px
+   ========================================================= */
+
+@media (min-width: 701px) and (max-width: 1000px) {
+
+    /* =========================
+       GLOBAL
+       ========================= */
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+
+    /* =========================
+       CONTAINERS
+       ========================= */
+
+    .container {
+        width: 95%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .row {
+        width: 100%;
+        margin: 0;
+    }
+
+
+    /* =========================
+       BREADCRUMB
+       ========================= */
+
+    .breadcrumb-ol {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .container-bread {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .bread-2 {
+        margin-left: auto;
+    }
+
+    .breadcrumb-li,
+    .breadcrumb-li-end {
+        font-size: 14px;
+    }
+
+    .separation-2 {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+    }
+
+
+    /* =========================
+       TITRES
+       ========================= */
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+
+    /* =========================
+       CONTENU PRINCIPAL
+       ========================= */
+
+    .hotel-content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 30px;
+    }
+
+    .hotel-gallery {
+    width: 100%;
+    min-width: 0;
+    }
+
+    .hotel-informations {
+    width: 100%;
+    min-width: 0;
+    }
+
+
+    /* =========================
+       CAROUSEL
+       ========================= */
+
+    .hotel-gallery {
+        width: 100%;
+    }
+
+    .carousel {
+        width: 100%;
+        height: 400px;
+    }
+
+    .thumbnail {
+        width: 100px;
+        height: 70px;
+    }
+
+
+    /* =========================
+       INFORMATIONS HÔTEL
+       ========================= */
+
+    .hotel-informations {
+        width: 100%;
+    }
+
+    .information-box {
+        padding: 20px;
+    }
+
+    .information-box h1 {
+        font-size: 26px;
+    }
+
+    .information-box h2 {
+        font-size: 21px;
+    }
+
+    .information-box p {
+        font-size: 16px;
+    }
+
+    .tags {
+        gap: 8px;
+    }
+
+    .tag {
+        padding: 8px 12px;
+        font-size: 15px;
+    }
+
+
+    /* =========================
+       NAVIGATION HÔTEL
+       ========================= */
+
+    .hotel-layout {
+        display: grid;
+        grid-template-columns: 190px 1fr;
+        width: 95%;
+        max-width: none;
+        margin: 40px auto;
+        gap: 20px;
+    }
+
+    .hotel-tabs {
+        width: 100%;
+    }
+
+    .hotel-tab {
+        width: 100%;
+        padding: 12px 8px;
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .tab-icon {
+        width: 20px;
+        font-size: 16px;
+    }
+
+
+    /* =========================
+       CONTENU DES TABS
+       ========================= */
+
+    .info-nav {
+        width: 100%;
+        padding: 15px;
+    }
+
+
+    /* =========================
+       CHANGE DATE
+       ========================= */
+
+    .change-date {
+        width: 230px;
+    }
+
+
+    /* =========================
+       ROOM TYPES
+       ========================= */
+
+    .rooms-cards {
+        width: 100%;
+        padding: 25px 0;
+        gap: 25px;
+    }
+
+    .room {
+        display: grid;
+        grid-template-columns: 40% 45% 15%;
+        width: 100%;
+        padding: 0;
+        align-items: stretch;
+    }
+
+
+    /* IMAGE */
+
+    .img-room {
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
+    }
+
+
+    /* DESCRIPTION */
+
+    .room-description {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .room h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .room p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+
+    /* INFORMATIONS */
+
+    .room-info {
+        width: 100%;
+        border-left: 1px solid #ccc;
+        padding: 0 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .room-details {
+        width: 100%;
+    }
+
+    .room-details p {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    .people {
+        font-size: 16px;
+        margin-left: 5px;
+    }
+
+
+    /* BOOK NOW */
+
+    .booking {
+        width: 115px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+
+    /* =========================
+       AUTRES
+       ========================= */
+
+    .show-all {
+        font-size: 17px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   0px → 700px
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    /* =========================
+       GLOBAL
+       ========================= */
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    /* =========================
+       CONTAINERS
+       ========================= */
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .row {
+        width: 100%;
+        margin: 0;
+    }
+
+
+    /* =========================
+       BREADCRUMB
+       ========================= */
+
+    .breadcrumb-ol {
+        width: 100%;
+        margin: 0;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .container-bread {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .bread-2 {
+        margin-left: 0;
+    }
+
+    .breadcrumb-li,
+    .breadcrumb-li-end {
+        font-size: 12px;
+        white-space: normal;
+    }
+
+    .breadcrumb-ol p {
+        margin: 0;
+    }
+
+    .separation-2 {
+        width: calc(100% - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+
+    /* =========================
+       TITRES
+       ========================= */
+
+    h1 {
+        font-size: 27px;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    h3 {
+        font-size: 21px;
+    }
+
+
+    /* =========================
+       CONTENU PRINCIPAL
+       ========================= */
+
+    .hotel-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: none;
+        margin: 30px 0;
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+
+    /* =========================
+       CAROUSEL
+       ========================= */
+
+    .hotel-gallery {
+        width: 100%;
+    }
+
+    .carousel {
+        width: 100%;
+        height: 280px;
+        border-radius: 6px;
+    }
+
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+
+    /* =========================
+       THUMBNAILS
+       ========================= */
+
+    .thumbnails {
+        width: 100%;
+        display: flex;
+        gap: 6px;
+        overflow-x: auto;
+        padding-bottom: 5px;
+    }
+
+    .thumbnail {
+        flex-shrink: 0;
+        width: 65px;
+        min-width: 65px;
+        height: 50px;
+    }
+
+
+    /* =========================
+       INFORMATIONS HÔTEL
+       ========================= */
+
+    .hotel-informations {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .information-box {
+        width: 100%;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .information-box h1 {
+        font-size: 24px;
+    }
+
+    .information-box h2 {
+        font-size: 20px;
+    }
+
+    .information-box p {
+        font-size: 16px;
+    }
+
+
+    /* =========================
+       TAGS
+       ========================= */
+
+    .tags {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .tag {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+
+    /* =========================
+       HELP
+       ========================= */
+
+    .help-phone {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .help-phone-2 {
+        padding-left: 10px;
+    }
+
+
+    /* =========================
+       NAVIGATION HÔTEL
+       ========================= */
+
+    .hotel-layout {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: none;
+        margin: 30px 0;
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+
+    /* =========================
+       TABS
+       ========================= */
+
+    .hotel-tabs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hotel-tab {
+        width: 100%;
+        padding: 13px 12px;
+        font-size: 15px;
+    }
+
+    .hotel-tab.active::after {
+        display: none;
+    }
+
+
+    /* =========================
+       CONTENU TAB
+       ========================= */
+
+    .info-nav {
+        width: 100%;
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+
+    /* =========================
+       FACILITIES
+       ========================= */
+
+    .liste-facilities {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* =========================
+       CHANGE DATE
+       ========================= */
+
+    .change-date {
+        width: 100%;
+        max-width: 255px;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       ROOM TYPES
+       ===================================================== */
+
+    .rooms-cards {
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+
+    /* ROOM */
+
+    .room {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+
+    /* IMAGE */
+
+    .img-room {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+    }
+
+
+    /* DESCRIPTION */
+
+    .room-description {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .room h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .room p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .more-info {
+        margin-top: 15px !important;
+    }
+
+    
+    /* INFORMATIONS ROOM */
+
+    .room-info {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #ccc;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .room-details {
+        width: 100%;
+    }
+
+    .room-details p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .people {
+        font-size: 18px;
+        margin-left: 0;
+    }
+
+
+    /* BOOK NOW */
+
+    .booking {
+        width: 140px;
+        height: 42px;
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+
+    /* SHOW ALL */
+
+    .show-all {
+        font-size: 16px;
+    }
+}
+
+
+@media (min-width: 1001px) {
+
+    .hotel-content {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 320px;
+        gap: 30px;
+        width: 90%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: start;
+    }
+
+    .hotel-gallery {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .hotel-informations {
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+
+/* PAGE CONTACT.HTML */
+
+/* =========================================================
+   CONTACT - TABLETTE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .container-contact {
+        width: 90%;
+        grid-template-columns: 1fr 330px;
+        gap: 25px;
+    }
+
+    .maps {
+        height: 400px;
+    }
+
+    .container-form-contact,
+    .container-contact-tel {
+        padding: 20px;
+    }
+}
+
+
+/* =========================================================
+   CONTACT - MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .container-contact {
+        width: 100%;
+        padding: 0 15px;
+        margin: 30px auto;
+
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+
+    /* =========================
+       TITRE
+       ========================= */
+
+    .titreH1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+
+    /* =========================
+       MAP
+       ========================= */
+
+    .container-maps {
+        width: 100%;
+    }
+
+    .maps {
+        width: 100%;
+        height: 300px;
+    }
+
+
+    /* =========================
+       PARTIE DROITE
+       ========================= */
+
+    .container-contact > aside {
+        width: 100%;
+    }
+
+    .container-form-contact,
+    .container-contact-tel {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    /* =========================
+       FORMULAIRE
+       ========================= */
+
+    .form-contact {
+        width: 100%;
+    }
+
+    .form-contact input,
+    .form-contact textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form-contact textarea {
+        min-height: 140px;
+    }
+
+
+    /* =========================
+       BOUTON
+       ========================= */
+
+    .button-contact {
+        width: 160px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* =========================
+       CONTACT DIRECT
+       ========================= */
+
+    .help-phone,
+    .help-mail {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .help-phone-2,
+    .help-mail-2 {
+        overflow-wrap: anywhere;
+    }
+}
+
+
+/* =========================================================
+   TRÈS PETIT MOBILE
+   ========================================================= */
+
+@media (max-width: 450px) {
+
+    .container-contact {
+        padding: 0 10px;
+    }
+
+    .titreH1 {
+        font-size: 25px;
+    }
+
+    .maps {
+        height: 250px;
+    }
+
+    .container-form-contact,
+    .container-contact-tel {
+        padding: 15px;
+    }
+
+    .container-form-contact h2,
+    .container-contact-tel h2 {
+        font-size: 20px;
+    }
+
+    .button-contact {
+        width: 100%;
+        max-width: 180px;
+    }
+}
