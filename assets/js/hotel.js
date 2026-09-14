@@ -221,31 +221,31 @@ document.addEventListener(
 const commentaires = [
     {
         nameReviews: "Anonymous",
-        imgPerson: "/assets/images/Avatar-inconnu.jpg",
+        imgPerson: "../images/Avatar-inconnu.jpg",
         positifReviews: "It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.",
         negatifReviews: "noisy neigbourghs spoilt the rather calm environment"
     },
     {
         nameReviews: "Anonymous",
-        imgPerson: "/assets/images/Avatar-inconnu.jpg",
+        imgPerson: "../images/Avatar-inconnu.jpg",
         positifReviews: "It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.",
         negatifReviews: "noisy neigbourghs spoilt the rather calm environment"
     },
     {
         nameReviews: "Anonymous",
-        imgPerson: "/assets/images/Avatar-inconnu.jpg",
+        imgPerson: "../images/Avatar-inconnu.jpg",
         positifReviews: "It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.",
         negatifReviews: "noisy neigbourghs spoilt the rather calm environment"
     },
     {
         nameReviews: "Anonymous",
-        imgPerson: "/assets/images/Avatar-inconnu.jpg",
+        imgPerson: "../images/Avatar-inconnu.jpg",
         positifReviews: "It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.",
         negatifReviews: "noisy neigbourghs spoilt the rather calm environment"
     },
     {
         nameReviews: "Anonymous",
-        imgPerson: "/assets/images/Avatar-inconnu.jpg",
+        imgPerson: "../images/Avatar-inconnu.jpg",
         positifReviews: "It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.",
         negatifReviews: "noisy neigbourghs spoilt the rather calm environment"
     },

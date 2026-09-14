@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/Book-Your-Travel/assets/css/style.css">
     <link rel="stylesheet" href="/Book-Your-Travel/assets/css/responsive.css">
     <link rel="stylesheet" href="/Book-Your-Travel/assets/css/hotel.css">
+    <link rel="stylesheet" href="/Book-Your-Travel/assets/css/payment-process-1.css">
     <!-- lien Font Awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="icon" type="image/png" href="/Book-Your-Travel/assets/images/favicon.png">
@@ -87,8 +88,7 @@
 
         <ul class="nav justify-content-center menu">
             <li class="nav-item">
-                <a class="nav-link" aria-current="page hotel"
-                    href="/Book-Your-Travel/assets/pages/hotel.html">HOTEL</a>
+                <a class="nav-link" aria-current="page hotel" href="/Book-Your-Travel/assets/pages/hotel.html">HOTEL</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">FLIGHTS</a>
@@ -143,7 +143,7 @@
                     <li class="breadcrumb-li">London</li>
                     <span>|</span>
 
-                    <li class="breadcrumb-li">Search results</li>
+                    <li class="breadcrumb-li">Best ipsum hotel</li>
                 </div>
 
                 <div class="container-bread bread-2">
@@ -158,11 +158,155 @@
     <hr class="separation-2">
 
     <!-- ================= MAIN ================= -->
-<main>
-</main>
+    <main>
+
+        <section class="form-payment">
+
+            <div class="container-form-payment">
+
+                <div class="formulaire-payment">
+                    <h2 class="titre-payment"><span class="color-number">01</span> Traveller info</h2>
+                    <hr class="separation-3">
+
+                    <form class="form-contact-payment-1" action="">
+
+                        <div class="form-field">
+                            <label class="contact" for="first-name">First name</label>
+                            <input type="text" name="first-name" id="first-name">
+                        </div>
+
+                        <div class="form-field">
+                            <label class="contact" for="last-name">Last name</label>
+                            <input type="text" name="last-name" id="last-name">
+                        </div>
+
+                        <div class="form-field">
+                            <label class="contact" for="email-address">Email address</label>
+                            <input type="email" name="email-address" id="email-address">
+                        </div>
+
+                        <div class="form-field">
+                            <label class="contact" for="confirm-email-address">
+                                Confirm email address
+                            </label>
+                            <input type="email" name="confirm-email-address" id="confirm-email-address">
+                        </div>
+
+                        <p><i class="petit-texte">You'll receive a confirmation email</i></p>
+
+                        <div class="form-field">
+                            <label class="contact" for="street-adress">
+                                Street Address an Number
+                            </label>
+                            <input type="text" name="street-adress" id="street-adress">
+                        </div>
+
+                        <div class="form-field">
+                            <label class="contact" for="city">Town / City</label>
+                            <input type="text" name="city" id="city">
+                        </div>
+
+                        <div class="form-field">
+                            <label class="contact" for="zip-code">ZIP Code</label>
+                            <input type="number" name="zip-code" id="zip-code">
+                        </div>
+
+                        <div class="form-field">
+                            <label class="contact" for="country">Country</label>
+                            <input type="text" name="country" id="country">
+                        </div>
+
+                        <div class="form-field full-width">
+                            <label class="contact" for="requirements">
+                                Special requirements: (Not Guaranteed)
+                            </label>
+
+                            <textarea name="requirements" id="requirements"></textarea>
+
+                            <p><i class="petit-texte">Please write your requests in English.</i></p>
+                        </div>
+
+                        <button class="button-contact" type="submit">
+                            PROCEED TO NEXT STEP
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="hotel-informations">
+
+                <div class="information-box">
+                    <h2>Best ipsum hotel</h2>
+                    <p>Marylebone, London <span class="note" aria-label="3 étoiles">★★★ 👍</span>8/10</p>
+
+                    <hr>
+
+                    <dl class="hotel-details">
+
+                        <div class="detail-item">
+                            <dt>Rooms</dt>
+                            <dd>Standard twin room</dd>
+                        </div>
+
+                        <div class="detail-item">
+                            <dt>Room Description</dt>
+                            <dd>Room only</dd>
+                        </div>
+
+                        <div class="detail-item">
+                            <dt>Check-in Date</dt>
+                            <dd>14-11-12</dd>
+                        </div>
+
+                        <div class="detail-item">
+                            <dt>Check-out Date</dt>
+                            <dd>15-11-12</dd>
+                        </div>
+
+                        <div class="detail-item">
+                            <dt>Room(s)</dt>
+                            <dd>1 night, 1 room, max. 2 people.</dd>
+                        </div>
+
+                    </dl>
+
+                    <hr>
+
+                    <h4 class="total-price">
+                        Total Price: $ 55,00
+                    </h4>
+
+                    <p>VAT (20%) included</p>
+
+                </div>
+
+                <!-- Help Contact -->
+
+                <aside class="information-box">
+                    <h2>Need Help Booking ?</h2>
+
+                    <hr>
+
+                    <p>
+                        Call our customer service team on the number below to speak
+                        to one of our advisors who will help you
+                        with all of your holiday needs.
+                    </p>
+                    <p class="help-phone">
+                        <i class="fa-solid fa-phone phone"></i>
+                        <span class="help-phone-2">1- 555 - 555 - 555</span>
+                    </p>
+                </aside>
+
+            </div>
+
+        </section>
+        
+    </main>
 
 
-<!-- ================= PIED DE PAGE ================= -->
+    <!-- ================= PIED DE PAGE ================= -->
 
     <footer class="footer">
         <div class="footer-container">
@@ -233,4 +377,5 @@
     <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
