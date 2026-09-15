@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="/Book-Your-Travel/assets/css/style.css">
     <link rel="stylesheet" href="/Book-Your-Travel/assets/css/responsive.css">
     <link rel="stylesheet" href="/Book-Your-Travel/assets/css/hotel.css">
+    <link rel="stylesheet" href="/Book-Your-Travel/assets/css/payment-process-1.css">
+    <link rel="stylesheet" href="/Book-Your-Travel/assets/css/payment-process-2.css">
     <!-- lien Font Awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="icon" type="image/png" href="/Book-Your-Travel/assets/images/favicon.png">
@@ -28,7 +30,9 @@
             <div class="container-fluid">
 
                 <!-- Logo -->
-                <img class="logo" src="../images/favicon.png" alt="Book Your Travel">
+                <a href="/Book-Your-Travel/index.html">
+                    <img class="logo" src="../images/favicon.png" alt="Book Your Travel">
+                </a>
 
                 <!-- Phone Number -->
                 <div class="support-container">
@@ -87,8 +91,7 @@
 
         <ul class="nav justify-content-center menu">
             <li class="nav-item">
-                <a class="nav-link" aria-current="page hotel"
-                    href="/Book-Your-Travel/assets/pages/hotel.html">HOTEL</a>
+                <a class="nav-link" aria-current="page hotel" href="/Book-Your-Travel/assets/pages/hotel.html">HOTEL</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">FLIGHTS</a>
@@ -143,7 +146,7 @@
                     <li class="breadcrumb-li">London</li>
                     <span>|</span>
 
-                    <li class="breadcrumb-li">Search results</li>
+                    <li class="breadcrumb-li">Best ipsum hotel</li>
                 </div>
 
                 <div class="container-bread bread-2">
@@ -158,11 +161,137 @@
     <hr class="separation-2">
 
     <!-- ================= MAIN ================= -->
-<main>
-</main>
+    <main>
+
+        <section class="form-payment">
+
+            <div class="container-form-payment">
+
+                <div class="formulaire-payment">
+                    <h2 class="titre-payment"><span class="color-number">02</span> Payment</h2>
+                    <hr class="separation-3">
+
+                    <form class="form-contact-payment-1" action="">
+
+                        <div class="form-field">
+                            <label class="contact" for="card-type">Card type</label>
+                            <input type="text" name="card-type" id="card-type">
+                        </div>
+
+                        <div class="form-field">
+                            <label class="contact" for="card-number">Card number</label>
+                            <input type="number" name="card-number" id="card-number">
+                        </div>
+
+                        <div class="form-field">
+                            <label class="contact" for="name-card">Name on card</label>
+                            <input type="text" name="name-card" id="name-card">
+                        </div>
+
+                        <div class="form-field">
+                            <label class="contact" for="expiration-date">
+                                Expiration Date
+                            </label>
+                            <input type="date" name="expiration-date" id="expiration-date">
+                        </div>
+
+                        <div class="form-field">
+                            <label class="contact" for="cv2-number">
+                                CV2 Number
+                            </label>
+                            <input type="number" name="cv2-number" id="cv2-number">
+                        </div>
 
 
-<!-- ================= PIED DE PAGE ================= -->
+
+                        <div class="booking-conditions">
+                            <input type="checkbox" id="conditions" name="conditions" required>
+                            <label class="contact" for="conditions">
+                                Yes, I have read and I agree to the <span class="condition">booking conditions</span>.
+                            </label>
+                        </div>
+
+                        <button class="button-contact" type="submit">
+                            SUBMIT BOOKING
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="hotel-informations">
+
+                <div class="information-box">
+                    <h2>Best ipsum hotel</h2>
+                    <p>Marylebone, London <span class="note" aria-label="3 étoiles">★★★ 👍</span>8/10</p>
+
+                    <hr>
+
+                    <dl class="hotel-details">
+
+                        <div class="detail-item">
+                            <dt>Rooms</dt>
+                            <dd>Standard twin room</dd>
+                        </div>
+
+                        <div class="detail-item">
+                            <dt>Room Description</dt>
+                            <dd>Room only</dd>
+                        </div>
+
+                        <div class="detail-item">
+                            <dt>Check-in Date</dt>
+                            <dd>14-11-12</dd>
+                        </div>
+
+                        <div class="detail-item">
+                            <dt>Check-out Date</dt>
+                            <dd>15-11-12</dd>
+                        </div>
+
+                        <div class="detail-item">
+                            <dt>Room(s)</dt>
+                            <dd>1 night, 1 room, max. 2 people.</dd>
+                        </div>
+
+                    </dl>
+
+                    <hr>
+
+                    <h4 class="total-price">
+                        Total Price: $ 55,00
+                    </h4>
+
+                    <p>VAT (20%) included</p>
+
+                </div>
+
+                <!-- Help Contact -->
+
+                <aside class="information-box">
+                    <h2>Need Help Booking ?</h2>
+
+                    <hr>
+
+                    <p>
+                        Call our customer service team on the number below to speak
+                        to one of our advisors who will help you
+                        with all of your holiday needs.
+                    </p>
+                    <p class="help-phone">
+                        <i class="fa-solid fa-phone phone"></i>
+                        <span class="help-phone-2">1- 555 - 555 - 555</span>
+                    </p>
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= PIED DE PAGE ================= -->
 
     <footer class="footer">
         <div class="footer-container">
@@ -233,4 +362,5 @@
     <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>

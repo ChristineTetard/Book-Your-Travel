@@ -31,7 +31,10 @@
             <div class="container-fluid">
 
                 <!-- Logo -->
-                <img class="logo" src="../images/favicon.png" alt="Book Your Travel">
+                <a href="/Book-Your-Travel/index.html">
+                    <img class="logo" src="../images/favicon.png" alt="Book Your Travel">
+                </a>
+
 
                 <!-- Phone Number -->
                 <div class="support-container">
@@ -127,89 +130,90 @@
             </li>
         </ul>
 
-        
 
-    <!-- ================= MAIN ================= -->
-<main>
 
-<!-- Breadcrumb -->
+        <!-- ================= MAIN ================= -->
+        <main>
 
-        <nav aria-label="Breadcrumb">
-            <ol class="breadcrumb-ol">
+            <!-- Breadcrumb -->
 
-                <div class="container-bread">
-                    <li class="breadcrumb-li">Home</li>
-                    <span>|</span>
+            <nav aria-label="Breadcrumb">
+                <ol class="breadcrumb-ol">
 
-                    <li class="breadcrumb-li">Contact</li>
-                </div>
-            </ol>
-        </nav>
+                    <div class="container-bread">
+                        <li class="breadcrumb-li"><a class="a-home" href="/Book-Your-Travel/index.html">Home</a></li>
+                        <span>|</span>
+
+                        <li class="breadcrumb-li">Contact</li>
+                    </div>
+                </ol>
+            </nav>
     </header>
 
     <hr class="separation-2">
 
 
-<!-- Titre + Maps -->
+    <!-- Titre + Maps -->
 
-<section class="container-contact">
-    <div class="contact">
-        <h1 class="titreH1">Contact us</h1>
+    <section class="container-contact">
+        <div class="contact">
+            <h1 class="titreH1">Contact us</h1>
 
-    <div class="container-maps">    
-        <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.2304654059035!2d-77.03495072338744!3d38.895844771724484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b797ef60a829%3A0x308f6aa1bf4c84c5!2s1400%20Pennsylvania%20Ave%20NW%2C%20Washington%2C%20DC%2020004%2C%20%C3%89tats-Unis!5e0!3m2!1sfr!2sfr!4v1787851796976!5m2!1sfr!2sfr"
-         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="strict-origin-when-cross-origin"></iframe>
-    </div>
-    </div>
-
-
-<aside>
-    <!-- Formulaire contact -->
-    <div class="container-form-contact">
-        <h2>Send us a message</h2>
-        <hr>
-
-        <form class="form-contact" action="">
-
-            <label class="contact" for="name-contact">Your name</label>
-            <input type="text" name="name-contact" id="name-contact">
-
-            <label class="contact" for="email-contact">Your e-mail</label>
-            <input type="email" name="email-contact" id="email-contact">
-
-            <label class="contact" for="message-contact">Your message</label>
-            <textarea type="text" name="message-contact" id="message-contact"></textarea>
-
-            <button class="button-contact" type="submit">
-                SEND
-            </button>
-
-        </form>
-    </div>
-
-    <!-- Contact directly -->
-     <div class="container-contact-tel">
-        <h2>Or contact us directly</h2>
-        <hr>
-        
-        <p class="help-phone">
-            <i class="fa-solid fa-phone phone"></i>
-            <span class="help-phone-2">1- 555 - 555 - 555</span>
-        </p>
-        <p class="help-mail">
-            <i class="fa-solid fa-envelope"></i>
-            <span class="help-mail-2">booking@mail.com</span>
-        </p>
-        
-     </div>
-</aside>
-
-</section>
-</main>
+            <div class="container-maps">
+                <iframe class="maps"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.2304654059035!2d-77.03495072338744!3d38.895844771724484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b797ef60a829%3A0x308f6aa1bf4c84c5!2s1400%20Pennsylvania%20Ave%20NW%2C%20Washington%2C%20DC%2020004%2C%20%C3%89tats-Unis!5e0!3m2!1sfr!2sfr!4v1787851796976!5m2!1sfr!2sfr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
 
 
-<!-- ================= PIED DE PAGE ================= -->
+        <aside>
+            <!-- Formulaire contact -->
+            <div class="container-form-contact">
+                <h2>Send us a message</h2>
+                <hr>
+
+                <form class="form-contact" action="">
+
+                    <label class="contact" for="name-contact">Your name</label>
+                    <input type="text" name="name-contact" id="name-contact">
+
+                    <label class="contact" for="email-contact">Your e-mail</label>
+                    <input type="email" name="email-contact" id="email-contact">
+
+                    <label class="contact" for="message-contact">Your message</label>
+                    <textarea type="text" name="message-contact" id="message-contact"></textarea>
+
+                    <button class="button-contact" type="submit">
+                        SEND
+                    </button>
+
+                </form>
+            </div>
+
+            <!-- Contact directly -->
+            <div class="container-contact-tel">
+                <h2>Or contact us directly</h2>
+                <hr>
+
+                <p class="help-phone">
+                    <i class="fa-solid fa-phone phone"></i>
+                    <span class="help-phone-2">1- 555 - 555 - 555</span>
+                </p>
+                <p class="help-mail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="help-mail-2">booking@mail.com</span>
+                </p>
+
+            </div>
+        </aside>
+
+    </section>
+    </main>
+
+
+    <!-- ================= PIED DE PAGE ================= -->
 
     <footer class="footer">
         <div class="footer-container">
@@ -280,4 +284,5 @@
     <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
