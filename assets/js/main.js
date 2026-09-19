@@ -5,6 +5,8 @@ const destinations = [
     {
         city: "Paris",
         img: "assets/images/tour-eiffel.jpg",
+        width: 400,
+        height: 267,
         hotels: "1529 Hotels",
         discount: false
     },
@@ -12,6 +14,8 @@ const destinations = [
     {
         city: "Amsterdam",
         img: "assets/images/Amsterdam2.jpg",
+        width: 640,
+        height: 467,
         hotels: "929 Hotels",
         discount: false
     },
@@ -19,6 +23,8 @@ const destinations = [
     {
         city: "St Petersburg",
         img: "assets/images/StPetersburg.jpg",
+        width: 640,
+        height: 467,
         hotels: "658 Hotels",
         discount: false
     },
@@ -26,6 +32,8 @@ const destinations = [
     {
         city: "Prague",
         img: "assets/images/Prague.jpg",
+        width: 640,
+        height: 467,
         hotels: "829 Hotels",
         discount: false
     },
@@ -33,6 +41,8 @@ const destinations = [
     {
         city: "Prague",
         img: "assets/images/Prague.jpg",
+        width: 640,
+        height: 467,
         hotels: "829 Hotels",
         discount: false
     },
@@ -40,6 +50,8 @@ const destinations = [
     {
         city: "Paris",
         img: "assets/images/tour-eiffel.jpg",
+        width: 400,
+        height: 267,
         hotels: "1529 Hotels",
         discount: true
     },
@@ -47,6 +59,8 @@ const destinations = [
     {
         city: "Amsterdam",
         img: "assets/images/Amsterdam2.jpg",
+        width: 640,
+        height: 467,
         hotels: "929 Hotels",
         // identifier la carte qui doit afficher le badge de réduction.
         discount: false
@@ -55,6 +69,8 @@ const destinations = [
     {
         city: "St Petersburg",
         img: "assets/images/StPetersburg.jpg",
+        width: 640,
+        height: 467,
         hotels: "658 Hotels",
         discount: false
     },
@@ -62,6 +78,8 @@ const destinations = [
     {
         city: "St Petersburg",
         img: "assets/images/StPetersburg.jpg",
+        width: 640,
+        height: 467,
         hotels: "658 Hotels",
         discount: false
     },
@@ -69,6 +87,8 @@ const destinations = [
     {
         city: "Prague",
         img: "assets/images/Prague.jpg",
+        width: 640,
+        height: 467,
         hotels: "829 Hotels",
         discount: false
     },
@@ -76,6 +96,8 @@ const destinations = [
     {
         city: "Paris",
         img: "assets/images/tour-eiffel.jpg",
+        width: 400,
+        height: 267,
         hotels: "1529 Hotels",
         discount: false
     },
@@ -83,6 +105,8 @@ const destinations = [
     {
         city: "Amsterdam",
         img: "assets/images/Amsterdam2.jpg",
+        width: 640,
+        height: 467,
         hotels: "929 Hotels",
         discount: false
     }
@@ -155,6 +179,8 @@ function afficherDestinations() {
                     src="${city.img}"
                     class="card-img-top"
                     alt="${city.city}"
+                    width="${city.width}"
+                    height="${city.height}"
                     loading="lazy"
                 >
 

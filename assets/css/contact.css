@@ -51,7 +51,7 @@
 
 /* INPUT */
 
-.form-contact input, 
+.form-contact input,
 .form-contact textarea {
     width: 100%;
     min-height: 38px;
@@ -120,7 +120,7 @@
 }
 
 /* CONTACT DIRECTLY */
-.container-contact-tel{
+.container-contact-tel {
     background-color: #fff;
     border-radius: 20px;
     margin-top: 20px;
@@ -233,7 +233,7 @@
 
     /* PARTIE DROITE */
 
-    .container-contact > aside {
+    .container-contact>aside {
         width: 100%;
     }
 

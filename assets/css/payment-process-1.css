@@ -128,12 +128,12 @@
 }
 
 .petit-texte {
-    color:rgb(99, 105, 34);
+    color: rgb(99, 105, 34);
 }
 
 /* Message de confirmation */
 
-.form-contact-payment-1 > p {
+.form-contact-payment-1>p {
     grid-column: 1 / -1;
     margin: -10px 0 0;
 }
