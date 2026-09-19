@@ -36,8 +36,8 @@
 
                 <!-- Phone Number -->
                 <div class="support-container">
-                    <a class="phone-number" href="">
-                        <i class="fa-solid fa-phone phone"></i>
+                    <a class="phone-number" href="tel:+15555555555">
+                        <i class="fa-solid fa-phone phone" aria-hidden="true"></i>
                         <ul class="numéro">
                             <li class="support">24/7 Support number</li>
                             <li class="tel"><strong>1- 555 - 555 - 555</strong></li>
@@ -61,7 +61,7 @@
                 <!-- Connexion -->
                 <div class="compte-container">
                     <a class="connexion-home" href="">
-                        <i class="fa-solid fa-circle-user compte"></i>
+                        <i class="fa-solid fa-circle-user compte" aria-hidden="true"></i>
                         <p class="p-compte">My Account</p>
                     </a>
                 </div>
@@ -88,7 +88,7 @@
         </nav>
 
         <!-- Menu de naviguation -->
-
+    <nav aria-label="Main navigation">
         <ul class="nav justify-content-center menu">
             <li class="nav-item">
                 <a class="nav-link" href="/Book-Your-Travel/assets/pages/hotel.html">HOTEL</a>
@@ -127,6 +127,7 @@
                 <a class="nav-link" href="#">PURCHASE</a>
             </li>
         </ul>
+    </nav>
     </header>
 
     <!-- ================= MAIN ================= -->
@@ -134,22 +135,30 @@
 
         <!-- Banner -->
 
-        <section class="banner" id="">
+        <section class="banner">
             <div class=" special-section">
+                <h1 class="visually-hidden">
+                    Book Your Travel
+                </h1>
                 <img src="assets/images/Banner.jpg" alt="">
             </div>
         </section>
 
         <!-- FORMULAIRE DE RECHERCHE -->
         <section class="search-section">
-            <form class="search-box" action="assets/pages/hotel.html" method="get">
+            <form 
+                class="search-box" 
+                action="assets/pages/hotel.html" 
+                method="get" 
+                aria-label="Search for travel"
+                >
 
                 <!-- 01 WHAT -->
                 <fieldset class="search-field what-field">
-                    <legend>
-                        <h5>
+                    <legend class="search-title">
+                        
                             <span class="fw-bold">01</span> What ?
-                        </h5>
+                        
                     </legend>
 
                     <div class="what-grid">
@@ -190,9 +199,9 @@
 
                 <!-- 02 WHERE -->
                 <div class="search-field">
-                    <h5>
+                        <p class="search-title">
                         <span class="fw-bold">02</span> Where ?
-                    </h5>
+                        </p>
 
                     <input type="text" class="form-controls" placeholder="City, region, district or specific hotel"
                         aria-label="Destination">
@@ -202,9 +211,9 @@
 
                 <!-- 03 WHEN -->
                 <div class="search-field">
-                    <h5>
+                        <p class="search-title">
                         <span class="fw-bold">03</span> When?
-                    </h5>
+                        </p>
                     <div class="when-grid">
 
                         <div class="date-field">
@@ -230,9 +239,9 @@
 
                 <!-- 04 WHO -->
                 <div class="search-field">
-                    <h5>
+                        <p class="search-title">
                         <span class="fw-bold">04</span> Who?
-                    </h5>
+                        </p>
                     <div class="who-grid">
 
                         <input type="number" class="form-controls" placeholder="Rooms" name="rooms" id="rooms" min="1"
@@ -647,7 +656,7 @@
             <div class="footer-column">
                 <h3>Don't miss our exclusive offers</h3>
                 <div class="signup-container">
-                    <label for="signup-email" aria-label="Your email address" class="visually-hidden"></label>
+                    <label for="signup-email" class="visually-hidden">Your email address</label>
                     <input type="email" id="signup-email" class="signup-input" placeholder="Enter your email here">
                     <button class="signup-button">SIGNUP</button>
                 </div>
