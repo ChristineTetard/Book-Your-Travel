@@ -110,7 +110,6 @@ a {
 
 .p-compte {
     margin: 0;
-    color: #5f554c;
     padding-top: 5px;
     white-space: nowrap;
     color: rgb(1, 37, 53);
@@ -169,14 +168,14 @@ a {
 }
 
 .footer-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 40px;
-  flex-wrap: wrap;
+  width: 100%;
 }
 
 .footer-column {
-  flex: 1;
-  min-width: 220px;
+  min-width: 0;
 }
 
 /* TITRE */
@@ -240,34 +239,36 @@ p strong {
 
 /* BARRE EMAIL */
 .signup-container {
-  display: flex;
-  border-radius: 40px;
-  overflow: hidden;
-  background: white;
-  border: 1px solid white;
-  width: 350px;
-  position: relative;
-  width: 100%;
+    display: flex;
+    width: 100%;
+    max-width: 350px;
+    background: white;
+    border: 1px solid white;
+    border-radius: 40px;
+    overflow: hidden;
 }
 
 .signup-input {
-  flex: 1;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  outline: none;
-  background: transparent;
+    flex: 1 1 auto;
+    width: 0;
+    min-width: 0;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
 }
 
 .signup-button {
-  background: #bcbc2d;
-  color: rgb(1, 37, 53);
-  border: none;
-  padding: 0 25px;
-  font-weight: bold;
-  cursor: pointer;
-  letter-spacing: 1px;
-  border-radius: 0 40px 40px 0;
+    flex-shrink: 0;
+    background: #bcbc2d;
+    color: rgb(1, 37, 53);
+    border: none;
+    padding: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-radius: 0 40px 40px 0;
 }
 
 .signup-button:hover {
@@ -291,7 +292,6 @@ p strong {
   padding: 15px 40px;
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
   color: white;
   font-size: 18px;
   flex-wrap: wrap;
@@ -324,4 +324,259 @@ p strong {
   content: "|";
   margin-left: 10px;
   color: white;
+}
+
+
+
+/* =========================================================
+   RESPONSIVE GLOBAL
+   ========================================================= */
+
+
+/* =========================================================
+   TABLETTE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    /* ================= HEADER ================= */
+
+    .logo {
+        margin-left: 10px;
+    }
+
+    .search-container {
+        width: 280px;
+        max-width: 100%;
+    }
+
+    .connexion-home {
+        margin-right: 15px;
+    }
+
+    .container-langue {
+        padding-right: 10px;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .footer {
+        padding: 40px 30px 0;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px;
+    }
+
+    .footer-column {
+        min-width: 0;
+    }
+
+    .signup-container {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .footer-bas {
+        padding: 15px 20px;
+        gap: 20px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    /* ================= GLOBAL ================= */
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .separation {
+        width: calc(100% - 30px);
+        margin-left: 15px;
+        margin-top: 30px;
+    }
+
+
+    /* ================= LOGO ================= */
+
+    .logo {
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+
+    /* ================= TÉLÉPHONE ================= */
+
+    .phone {
+        font-size: 24px;
+    }
+
+    .phone-number {
+        margin: 0;
+    }
+
+
+    /* ================= RECHERCHE ================= */
+
+    .search-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .search-container input {
+        width: 100%;
+        font-size: 14px;
+        padding: 12px 50px 12px 15px;
+    }
+
+
+    /* ================= COMPTE ================= */
+
+    .connexion-home {
+        margin-right: 0;
+        gap: 5px;
+    }
+
+    .compte {
+        font-size: 25px;
+        margin-right: 5px;
+    }
+
+    .p-compte {
+        font-size: 14px;
+    }
+
+
+    /* ================= LANGUE / DEVISE ================= */
+
+    .container-langue {
+        padding-right: 0;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .footer {
+        padding: 35px 20px 0;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-column {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .footer h3 {
+        margin-bottom: 15px;
+    }
+
+
+    /* ================= NEWSLETTER ================= */
+
+    .signup-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .signup-input {
+        min-width: 0;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .signup-button {
+        padding: 0 15px;
+        font-size: 12px;
+    }
+
+
+    /* ================= RÉSEAUX SOCIAUX ================= */
+
+    .socials {
+        gap: 10px;
+    }
+
+    .socials a {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    /* ================= BAS DU FOOTER ================= */
+
+    .footer-bas {
+        padding: 15px 0;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    .footer-left-bas,
+    .footer-right-bas {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-right-bas {
+        padding-top: 10px;
+    }
+
+    .footer-right-bas a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
+
+
+/* =========================================================
+   TRÈS PETIT MOBILE
+   ========================================================= */
+
+@media (max-width: 450px) {
+
+    .footer {
+        padding: 30px 15px 0;
+    }
+
+    .signup-container {
+        flex-direction: column;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .signup-input {
+        width: 100%;
+        padding: 12px 15px;
+    }
+
+    .signup-button {
+        width: 100%;
+        padding: 12px;
+        border-radius: 0;
+    }
+
+    .footer-right-bas a {
+        margin: 4px;
+        font-size: 13px;
+    }
 }

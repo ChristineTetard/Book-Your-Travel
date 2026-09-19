@@ -34,4 +34,81 @@
 
 .booking-conditions label span {
     color: rgb(99, 105, 34);
+    margin-left: 4px;
+}
+
+
+
+/* =========================================================
+   RESPONSIVE PAYMENT PROCESS 2
+   ========================================================= */
+
+
+/* =========================================================
+   TABLETTE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .booking-conditions {
+        width: 100%;
+        gap: 12px;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .booking-conditions label {
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .booking-conditions {
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 0;
+        margin: 10px 0 20px;
+    }
+
+    .booking-conditions input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        flex: 0 0 20px;
+        margin-top: 2px;
+    }
+
+    .booking-conditions label {
+        display: block;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+
+/* =========================================================
+   TRÈS PETIT MOBILE
+   ========================================================= */
+
+@media (max-width: 450px) {
+
+    .booking-conditions {
+        gap: 8px;
+    }
+
+    .booking-conditions input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        flex: 0 0 18px;
+    }
+
+    .booking-conditions label {
+        font-size: 13px;
+    }
 }

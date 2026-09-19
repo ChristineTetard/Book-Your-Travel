@@ -160,25 +160,6 @@
     color: #71808c;
 }
 
-
-/* =========================================================
-   AUTRE FORMULAIRE
-   ========================================================= */
-
-.container-form-contact {
-    background-color: #fff;
-    border-radius: 20px;
-    margin-top: 120px;
-    margin-right: 50px;
-    padding: 20px;
-    padding-top: 10px;
-    font-weight: bold;
-}
-
-.form-contact {
-    display: grid;
-}
-
 /* =========================
    LABEL GÉNÉRAL
    ========================= */
@@ -252,4 +233,186 @@
     color: #635e22;
     margin-left: 10px;
 
+}
+
+
+
+
+/* =========================================================
+   RESPONSIVE PAYMENT PROCESS 1
+   ========================================================= */
+
+
+/* =========================================================
+   TABLETTE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    /* ================= CONTAINER PRINCIPAL ================= */
+
+    .form-payment {
+        width: 90%;
+        grid-template-columns: minmax(0, 1fr) 280px;
+        gap: 25px;
+    }
+
+
+    /* ================= FORMULAIRE ================= */
+
+    .form-contact-payment-1 {
+        gap: 22px;
+        padding: 0 30px 30px;
+    }
+
+
+    /* ================= TITRE ================= */
+
+    .color-number {
+        padding-left: 30px;
+    }
+
+    .separation-3 {
+        margin: 25px 30px;
+    }
+
+
+    /* ================= INFORMATIONS HOTEL ================= */
+
+    .hotel-informations {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    /* ================= CONTAINER PRINCIPAL ================= */
+
+    .form-payment {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 30px auto 60px;
+        padding: 0 15px;
+        gap: 25px;
+    }
+
+
+    /* ================= FORMULAIRE ================= */
+
+    .container-form-payment {
+        width: 100%;
+    }
+
+    .form-contact-payment-1 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 20px 25px;
+    }
+
+
+    /* Tous les champs occupent une seule colonne */
+
+    .form-field,
+    .form-field.full-width {
+        grid-column: 1;
+        width: 100%;
+        min-width: 0;
+    }
+
+
+    /* ================= INPUTS ================= */
+
+    .form-field input,
+    .form-field textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    /* ================= TITRE ================= */
+
+    .titre-payment {
+        padding-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    .color-number {
+        padding-left: 20px;
+    }
+
+
+    /* ================= LIGNE ================= */
+
+    .separation-3 {
+        margin: 20px;
+    }
+
+
+    /* ================= BOUTON ================= */
+
+    .button-contact {
+        width: 100%;
+        max-width: 255px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* ================= INFORMATIONS HOTEL ================= */
+
+    .hotel-informations {
+        width: 100%;
+        min-width: 0;
+        gap: 20px;
+    }
+}
+
+
+/* =========================================================
+   TRÈS PETIT MOBILE
+   ========================================================= */
+
+@media (max-width: 450px) {
+
+    .form-payment {
+        padding: 0 10px;
+        margin-bottom: 40px;
+    }
+
+    .form-contact-payment-1 {
+        padding: 0 15px 20px;
+        gap: 18px;
+    }
+
+    .titre-payment {
+        font-size: 24px;
+    }
+
+    .color-number {
+        padding-left: 15px;
+    }
+
+    .separation-3 {
+        margin: 15px;
+    }
+
+    .form-field input {
+        min-height: 45px;
+    }
+
+    .form-field textarea {
+        min-height: 140px;
+    }
+
+    .button-contact {
+        width: 100%;
+        max-width: 220px;
+    }
 }

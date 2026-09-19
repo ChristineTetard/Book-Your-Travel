@@ -97,7 +97,7 @@
 
 /* INPUT */
 
-.form-controls {
+.form-control {
     width: 100%;
     height: 38px;
     padding: 7px 12px;
@@ -414,4 +414,146 @@
 
 .article-send {
   color: rgb(1, 37, 53);
+}
+
+
+/* =========================================================
+   RESPONSIVE HOME
+   ========================================================= */
+
+
+/* ================= TABLETTE ================= */
+
+@media (max-width: 1100px) {
+
+    /* FORMULAIRE DE RECHERCHE */
+
+    .search-box {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .form-button {
+        grid-column: 1 / -1;
+        width: 255px;
+        justify-self: center;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+    /* BANNIÈRE */
+
+    .special-section img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* FORMULAIRE DE RECHERCHE */
+
+    .search-section {
+        margin-top: -30px;
+        padding: 0 15px;
+    }
+
+    .search-box {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        border-radius: 16px;
+        gap: 22px;
+    }
+
+    .search-field {
+        width: 100%;
+        min-width: 0;
+    }
+
+
+    /* WHAT */
+
+    .what-grid {
+        grid-template-columns: repeat(2, max-content);
+    }
+
+
+    /* WHEN */
+
+    .date-field {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+
+    /* INPUTS */
+
+    .form-controls {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    /* BOUTON */
+
+    .form-button {
+        grid-column: 1;
+        width: 100%;
+    }
+
+
+    /* TITRES DES SECTIONS */
+
+    .promos,
+    .destinations {
+        margin-top: 60px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    /* ARTICLES */
+
+    .articles {
+        padding-bottom: 60px;
+    }
+
+    .card-article-t {
+        margin-left: 15px;
+    }
+
+    .hr-card {
+        max-width: calc(100% - 30px);
+        margin-left: 15px;
+    }
+}
+
+
+/* ================= TRÈS PETIT MOBILE ================= */
+
+@media (max-width: 450px) {
+
+    .search-section {
+        padding: 0 10px;
+    }
+
+    .search-box {
+        padding: 18px 15px;
+    }
+
+    .what-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-button {
+        width: 100%;
+    }
+
+    .promos,
+    .destinations {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
