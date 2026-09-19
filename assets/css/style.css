@@ -64,13 +64,20 @@ main {
 
 .search-container input {
     width: 100%;
-    padding: 14px 55px 14px 20px;
-    border-radius: 40px;
-    border: 2px solid #cfcfcf;
-    background-color: #efefef;
-    font-size: 16px;
+    padding: 12px 50px 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
     outline: none;
-    color: #666;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-container input:hover {
+    border-color: #29a2b4;
+}
+
+.search-container input:focus {
+    border-color: #29a2b4;
+    box-shadow: 0 0 0 3px rgba(41, 162, 180, 0.15);
 }
 
 .search-container input::placeholder {
