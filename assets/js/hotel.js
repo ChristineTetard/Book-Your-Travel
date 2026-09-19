@@ -187,10 +187,13 @@ function afficherRooms() {
     </div>
 
     <div class="room-info">
-        <p>Max : <span class="people">${peopleIcons}</span></p>
+        <p>Max :
+            <span class="people" aria-hidden="true">${peopleIcons}</span>
+            <span class="visually-hidden">${room.person} people</span>
+        </p>
         <p>Price: $ 55</p>
         <p>Rooms: 01</p>
-        <a class="booking" href="/Book-Your-Travel/assets/pages/payment-process-1.html">BOOK NOW</a>
+        <a class="booking" href="/Book-Your-Travel/assets/pages/payment-process-1.html" aria-label="Book ${room.name}">BOOK NOW</a>
     </div>
     
     
