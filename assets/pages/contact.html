@@ -37,8 +37,8 @@
 
                 <!-- Phone Number -->
                 <div class="support-container">
-                    <a class="phone-number" href="">
-                        <i class="fa-solid fa-phone phone"></i>
+                    <a class="phone-number" href="tel:+15555555555">
+                        <i class="fa-solid fa-phone phone" aria-hidden="true"></i>
                         <ul class="numéro">
                             <li class="support">24/7 Support number</li>
                             <li class="tel"><strong>1- 555 - 555 - 555</strong></li>
@@ -62,7 +62,7 @@
                 <!-- Connexion -->
                 <div class="compte-container">
                     <a class="connexion-home" href="">
-                        <i class="fa-solid fa-circle-user compte"></i>
+                        <i class="fa-solid fa-circle-user compte" aria-hidden="true"></i>
                         <p class="p-compte">My Account</p>
                     </a>
                 </div>
@@ -89,10 +89,10 @@
         </nav>
 
         <!-- Menu de naviguation -->
-
+        <nav aria-label="Main navigation">
         <ul class="nav justify-content-center menu">
             <li class="nav-item">
-                <a class="nav-link" aria-current="page hotel" href="/Book-Your-Travel/assets/pages/hotel.html">HOTEL</a>
+                <a class="nav-link" href="/Book-Your-Travel/assets/pages/hotel.html">HOTEL</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">FLIGHTS</a>
@@ -119,7 +119,7 @@
                 <a class="nav-link" href="#">PAGES</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link  active" href="#">CONTACT</a>
+                <a class="nav-link  active" href="#" aria-current="page">CONTACT</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">BLOG</a>
@@ -128,7 +128,7 @@
                 <a class="nav-link" href="#">PURCHASE</a>
             </li>
         </ul>
-
+        </nav>
 
 
         <!-- ================= MAIN ================= -->
@@ -162,7 +162,8 @@
                 <iframe class="maps"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.2304654059035!2d-77.03495072338744!3d38.895844771724484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b797ef60a829%3A0x308f6aa1bf4c84c5!2s1400%20Pennsylvania%20Ave%20NW%2C%20Washington%2C%20DC%2020004%2C%20%C3%89tats-Unis!5e0!3m2!1sfr!2sfr!4v1787851796976!5m2!1sfr!2sfr"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    title="Map showing the location of Book Your Travel"></iframe>
             </div>
         </div>
 
@@ -182,7 +183,7 @@
                     <input type="email" name="email-contact" id="email-contact">
 
                     <label class="contact" for="message-contact">Your message</label>
-                    <textarea type="text" name="message-contact" id="message-contact"></textarea>
+                    <textarea name="message-contact" id="message-contact"></textarea>
 
                     <button class="button-contact" type="submit">
                         SEND
@@ -197,11 +198,11 @@
                 <hr>
 
                 <p class="help-phone">
-                    <i class="fa-solid fa-phone phone"></i>
+                    <i class="fa-solid fa-phone phone" aria-hidden="true"></i>
                     <span class="help-phone-2">1- 555 - 555 - 555</span>
                 </p>
                 <p class="help-mail">
-                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                     <span class="help-mail-2">booking@mail.com</span>
                 </p>
 
@@ -251,7 +252,7 @@
             <div class="footer-column">
                 <h3>Don't miss our exclusive offers</h3>
                 <div class="signup-container">
-                    <label for="signup-email" aria-label="Your email address"></label>
+                    <label for="signup-email" class="visually-hidden">Your email address</label>
                     <input type="email" id="signup-email" class="signup-input" placeholder="Enter your email here">
                     <button class="signup-button">SIGNUP</button>
                 </div>
