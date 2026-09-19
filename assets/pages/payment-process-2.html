@@ -35,8 +35,8 @@
 
                 <!-- Phone Number -->
                 <div class="support-container">
-                    <a class="phone-number" href="">
-                        <i class="fa-solid fa-phone phone"></i>
+                    <a class="phone-number" href="tel:+15555555555">
+                        <i class="fa-solid fa-phone phone" aria-hidden="true"></i>
                         <ul class="numéro">
                             <li class="support">24/7 Support number</li>
                             <li class="tel"><strong>1- 555 - 555 - 555</strong></li>
@@ -60,7 +60,7 @@
                 <!-- Connexion -->
                 <div class="compte-container">
                     <a class="connexion-home" href="">
-                        <i class="fa-solid fa-circle-user compte"></i>
+                        <i class="fa-solid fa-circle-user compte" aria-hidden="true"></i>
                         <p class="p-compte">My Account</p>
                     </a>
                 </div>
@@ -87,46 +87,47 @@
         </nav>
 
         <!-- Menu de naviguation -->
-
-        <ul class="nav justify-content-center menu">
-            <li class="nav-item">
-                <a class="nav-link" aria-current="page hotel" href="/Book-Your-Travel/assets/pages/hotel.html">HOTEL</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">FLIGHTS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">FLIGHTS + HOTEL</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">SELF CATERING</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">CRUISES</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">CAR RENTAL</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">LOCATIONS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">HOT DEALS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">PAGES</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">CONTACT</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">BLOG</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">PURCHASE</a>
-            </li>
-        </ul>
-
+        <nav aria-label="Main navigation">
+            <ul class="nav justify-content-center menu">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page hotel"
+                        href="/Book-Your-Travel/assets/pages/hotel.html">HOTEL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FLIGHTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FLIGHTS + HOTEL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SELF CATERING</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CRUISES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CAR RENTAL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">LOCATIONS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">HOT DEALS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PAGES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PURCHASE</a>
+                </li>
+            </ul>
+        </nav>
         <!-- Breadcrumb -->
 
         <nav aria-label="Breadcrumb">
@@ -167,7 +168,7 @@
             <div class="container-form-payment">
 
                 <div class="formulaire-payment">
-                    <h2 class="titre-payment"><span class="color-number">02</span> Payment</h2>
+                    <h1 class="titre-payment"><span class="color-number">02</span> Payment</h1>
                     <hr class="separation-3">
 
                     <form class="form-contact-payment-1" action="">
@@ -179,12 +180,13 @@
 
                         <div class="form-field">
                             <label class="contact" for="card-number">Card number</label>
-                            <input type="number" name="card-number" id="card-number">
+                            <input type="text" name="card-number" id="card-number" inputmode="numeric"
+                                autocomplete="cc-number">
                         </div>
 
                         <div class="form-field">
                             <label class="contact" for="name-card">Name on card</label>
-                            <input type="text" name="name-card" id="name-card">
+                            <input type="text" name="name-card" id="name-card" autocomplete="cc-name">
                         </div>
 
                         <div class="form-field">
@@ -198,7 +200,8 @@
                             <label class="contact" for="cv2-number">
                                 CV2 Number
                             </label>
-                            <input type="number" name="cv2-number" id="cv2-number">
+                            <input type="text" name="cv2-number" id="cv2-number" inputmode="numeric"
+                                autocomplete="cc-csc">
                         </div>
 
 
@@ -222,7 +225,8 @@
 
                 <div class="information-box">
                     <h2>Best ipsum hotel</h2>
-                    <p>Marylebone, London <span class="note" aria-label="3 étoiles">★★★ 👍</span>8/10</p>
+                    <p>Marylebone, London <span class="note" aria-label="3 stars"><span aria-hidden="true">★★★
+                                👍</span></span>8/10</p>
 
                     <hr>
 
@@ -257,9 +261,9 @@
 
                     <hr>
 
-                    <h4 class="total-price">
+                    <p class="total-price">
                         Total Price: $ 55,00
-                    </h4>
+                    </p>
 
                     <p>VAT (20%) included</p>
 
@@ -278,7 +282,7 @@
                         with all of your holiday needs.
                     </p>
                     <p class="help-phone">
-                        <i class="fa-solid fa-phone phone"></i>
+                        <i class="fa-solid fa-phone phone" aria-hidden="true"></i>
                         <span class="help-phone-2">1- 555 - 555 - 555</span>
                     </p>
                 </aside>
@@ -329,7 +333,7 @@
             <div class="footer-column">
                 <h3>Don't miss our exclusive offers</h3>
                 <div class="signup-container">
-                    <label for="signup-email" aria-label="Your email address"></label>
+                    <label for="signup-email" class="visually-hidden">Your email address</label>
                     <input type="email" id="signup-email" class="signup-input" placeholder="Enter your email here">
                     <button class="signup-button">SIGNUP</button>
                 </div>
