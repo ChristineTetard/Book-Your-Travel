@@ -310,6 +310,38 @@ aside i {
         gap: 25px;
     }
 
+    /* ================= BREADCRUMB ================= */
+
+    .breadcrumb-ol {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .container-bread {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .bread-2 {
+        margin-left: auto;
+    }
+
+    .breadcrumb-li,
+    .breadcrumb-li-end {
+        font-size: 14px;
+    }
+
+    .separation-2 {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+    }
+
 
     /* ================= FORMULAIRE ================= */
 
@@ -354,6 +386,45 @@ aside i {
         margin: 30px auto 60px;
         padding: 0 15px;
         gap: 25px;
+    }
+
+    /* ================= BREADCRUMB ================= */
+
+    .breadcrumb-ol {
+        width: 100%;
+        margin: 0;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .container-bread {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .bread-2 {
+        margin-left: 0;
+    }
+
+    .breadcrumb-li,
+    .breadcrumb-li-end {
+        font-size: 12px;
+        white-space: normal;
+    }
+
+    .breadcrumb-ol p {
+        margin: 0;
+    }
+
+    .separation-2 {
+        width: calc(100% - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
 
