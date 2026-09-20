@@ -4,10 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta 
-        name="description"
-        content="Discover hotel information, rooms, facilities, reviews and booking options with Book Your Travel."
-    >
+    <meta name="description"
+        content="Discover hotel information, rooms, facilities, reviews and booking options with Book Your Travel.">
     <title>Book Your Travel</title>
 
     <!-- lien Bootstrap -->
@@ -20,7 +18,7 @@
 
     <!-- lien Font Awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="icon" type="image/png" href="/Book-Your-Travel/assets/images/favicon.jpg">
+    <link rel="icon" type="image/png" href="/Book-Your-Travel/assets/images/favicon.webp">
 </head>
 
 <body>
@@ -33,11 +31,8 @@
 
                 <!-- Logo -->
                 <a href="/Book-Your-Travel/index.html">
-                    <img class="logo" src="../images/favicon.jpg" 
-                    alt="Book Your Travel"
-                    width="130"
-                    height="102"
-                    >
+                    <img class="logo" src="../images/favicon.webp" alt="Book Your Travel" width="130" height="102"
+                        fetchpriority="high">
                 </a>
 
                 <!-- Phone Number -->
@@ -138,31 +133,43 @@
         <!-- Breadcrumb -->
 
         <nav aria-label="Breadcrumb">
-            <ol class="breadcrumb-ol">
+            <div class="breadcrumb-ol">
 
                 <div class="container-bread">
-                    <li class="breadcrumb-li"><a class="a-home" href="/Book-Your-Travel/index.html">Home</a></li>
-                    <span>|</span>
+                    <span class="breadcrumb-li">
+                        <a class="a-home" href="/Book-Your-Travel/index.html">Home</a>
+                    </span>
 
-                    <li class="breadcrumb-li">Hotels</li>
-                    <span>|</span>
+                    <span aria-hidden="true">|</span>
 
-                    <li class="breadcrumb-li">United Kingdom</li>
-                    <span>|</span>
+                    <span class="breadcrumb-li">Hotels</span>
 
-                    <li class="breadcrumb-li">London</li>
-                    <span>|</span>
+                    <span aria-hidden="true">|</span>
 
-                    <li class="breadcrumb-li">Search results</li>
+                    <span class="breadcrumb-li">United Kingdom</span>
+
+                    <span aria-hidden="true">|</span>
+
+                    <span class="breadcrumb-li">London</span>
+
+                    <span aria-hidden="true">|</span>
+
+                    <span class="breadcrumb-li">Search results</span>
                 </div>
 
                 <div class="container-bread bread-2">
-                    <li class="breadcrumb-li-end">Back to results</li>
-                    <span>|</span>
-                    <li class="breadcrumb-li-end"><a class="a-home" href="/Book-Your-Travel/index.html">Change
-                            search</a></li>
+                    <span class="breadcrumb-li-end">Back to results</span>
+
+                    <span aria-hidden="true">|</span>
+
+                    <span class="breadcrumb-li-end">
+                        <a class="a-home" href="/Book-Your-Travel/index.html">
+                            Change search
+                        </a>
+                    </span>
                 </div>
-            </ol>
+
+            </div>
         </nav>
     </header>
 
@@ -182,8 +189,8 @@
                         ❮
                     </button>
 
-                    <img src="/Book-Your-Travel/assets/images/hotel/luxury-poolside-experience-where-guests-bask-opulence-cabanas (1).jpg"
-                        alt="Hotel room" id="mainImage">
+                    <img src="/Book-Your-Travel/assets/images/hotel/luxury-poolside-experience-where-guests-bask-opulence-cabanas (1).webp"
+                        alt="Hotel room" id="mainImage" fetchpriority="high">
 
                     <button class="carousel-btn next" aria-label="Next image">
                         ❯
@@ -194,27 +201,27 @@
                 <div class="thumbnails">
 
                     <button class="thumbnail active" data-index="0">
-                        <img src="/Book-Your-Travel/assets/images/hotel/luxury-poolside-experience-where-guests-bask-opulence-cabanas (1).jpg"
+                        <img src="/Book-Your-Travel/assets/images/hotel/luxury-poolside-experience-where-guests-bask-opulence-cabanas (1).webp"
                             alt="Hotel room">
                     </button>
 
                     <button class="thumbnail" data-index="1">
-                        <img src="/Book-Your-Travel/assets/images/hotel/hhyunma-hotel-swimming-pool-1065275_1920 (1).jpg"
+                        <img src="/Book-Your-Travel/assets/images/hotel/hhyunma-hotel-swimming-pool-1065275_1920 (1).webp"
                             alt="Hotel exterior">
                     </button>
 
                     <button class="thumbnail" data-index="2">
-                        <img src="/Book-Your-Travel/assets/images/hotel/engin_akyurt-resort-4369984_1920 (1).jpg"
+                        <img src="/Book-Your-Travel/assets/images/hotel/engin_akyurt-resort-4369984_1920 (1).webp"
                             alt="Hotel pool">
                     </button>
 
                     <button class="thumbnail" data-index="3">
-                        <img src="/Book-Your-Travel/assets/images/hotel/dreamwalker-palm-966994_1920 (1).jpg"
+                        <img src="/Book-Your-Travel/assets/images/hotel/dreamwalker-palm-966994_1920 (1).webp"
                             alt="Hotel restaurant">
                     </button>
 
                     <button class="thumbnail" data-index="4">
-                        <img src="/Book-Your-Travel/assets/images/hotel/chair-pool (1) (1).jpg" alt="Hotel bedroom">
+                        <img src="/Book-Your-Travel/assets/images/hotel/chair-pool (1) (1).webp" alt="Hotel bedroom">
                     </button>
                 </div>
 
@@ -222,41 +229,41 @@
                 <div class="hotel-layout">
 
                     <!-- MENU DE GAUCHE -->
-                    <nav class="hotel-tabs navbar-main" aria-label="Informations sur l'hôtel">
+                    <nav class="hotel-tabs navbar-main" aria-label="Informations sur l'hôtel" role="tablist">
 
                         <button class="hotel-tab active" type="button" id="tab-availability" data-tab="availability"
-                            aria-selected="true" aria-controls="availability">
+                            role="tab" aria-selected="true" aria-controls="availability">
                             <span class="tab-icon"><i class="fa-solid fa-calendar icon" aria-hidden="true"></i></span>
                             <span>Availability</span>
                         </button>
 
-                        <button class="hotel-tab" type="button" id="tab-description" data-tab="description"
+                        <button class="hotel-tab" type="button" id="tab-description" data-tab="description" role="tab"
                             aria-selected="false" aria-controls="description">
                             <span class="tab-icon"><i class="fa-solid fa-circle-info icon"
                                     aria-hidden="true"></i></span>
                             <span>Description</span>
                         </button>
 
-                        <button class="hotel-tab" type="button" id="tab-facilities" data-tab="facilities"
+                        <button class="hotel-tab" type="button" id="tab-facilities" data-tab="facilities" role="tab"
                             aria-selected="false" aria-controls="facilities">
                             <span class="tab-icon"><i class="fa-solid fa-compass icon" aria-hidden="true"></i></span>
                             <span>Facilities</span>
                         </button>
 
-                        <button class="hotel-tab" type="button" id="tab-location" data-tab="location"
+                        <button class="hotel-tab" type="button" id="tab-location" data-tab="location" role="tab"
                             aria-selected="false" aria-controls="location">
                             <span class="tab-icon"><i class="fa-solid fa-location-dot icon"
                                     aria-hidden="true"></i></span>
                             <span>Location</span>
                         </button>
 
-                        <button class="hotel-tab" type="button" id="tab-reviews" data-tab="reviews"
+                        <button class="hotel-tab" type="button" id="tab-reviews" data-tab="reviews" role="tab"
                             aria-selected="false" aria-controls="reviews">
                             <span class="tab-icon"><i class="fa-solid fa-thumbs-up icon" aria-hidden="true"></i></span>
                             <span>Reviews</span>
                         </button>
 
-                        <button class="hotel-tab" type="button" id="tab-things-to-do" data-tab="things-to-do"
+                        <button class="hotel-tab" type="button" id="tab-things-to-do" data-tab="things-to-do" role="tab"
                             aria-selected="false" aria-controls="things-to-do">
                             <span class="tab-icon"><i class="fa-solid fa-star icon" aria-hidden="true"></i></span>
                             <span>Things To Do</span>
@@ -270,7 +277,8 @@
 
                         <!-- Availability-->
 
-                        <section class="tab-content active" id="availability" aria-labelledby="tab-availability">
+                        <section class="tab-content active" id="availability" role="tabpanel"
+                            aria-labelledby="tab-availability">
                             <article class="info-availability">
                                 <h2 class="titres">Availability</h2>
                                 <hr>
@@ -314,7 +322,7 @@
 
                         <!-- Description -->
 
-                        <section class="tab-content" id="description" aria-labelledby="tab-description">
+                        <section class="tab-content" id="description" role="tabpanel" aria-labelledby="tab-description">
                             <article>
                                 <h2 class="titres">General</h2>
                                 <hr>
@@ -390,7 +398,7 @@
 
                         <!-- Facilities -->
 
-                        <section class="tab-content" id="facilities" aria-labelledby="tab-facilities">
+                        <section class="tab-content" id="facilities" role="tabpanel" aria-labelledby="tab-facilities">
                             <article>
                                 <h2 class="titres">Facilities</h2>
                                 <hr>
@@ -442,7 +450,7 @@
 
                         <!-- Emplacement -->
 
-                        <section class="tab-content" id="location" aria-labelledby="tab-location">
+                        <section class="tab-content" id="location" role="tabpanel" aria-labelledby="tab-location">
                             <article>
                                 <h2 class="titres">Emplacement</h2>
                                 <hr>
@@ -457,7 +465,7 @@
 
                         <!-- Critiques -->
 
-                        <section class="tab-content" id="reviews" aria-labelledby="tab-reviews">
+                        <section class="tab-content" id="reviews" role="tabpanel" aria-labelledby="tab-reviews">
                             <article class="critiques">
 
                                 <h2 class="titres">Hotel Score and Score Breakdown</h2>
@@ -556,7 +564,8 @@
 
                         <!-- Choses à faire -->
 
-                        <section class="tab-content" id="things-to-do" aria-labelledby="tab-things-to-do">
+                        <section class="tab-content" id="things-to-do" role="tabpanel"
+                            aria-labelledby="tab-things-to-do">
                             <article>
                                 <h2 class="titres">London</h2>
                                 <hr>
@@ -779,7 +788,7 @@
 
                     <article class="container-article-hotel">
                         <h3>Plaza Resort Hotel & SPA</h3>
-                        <div class="etoiles" aria-label="4 étoiles">
+                        <div class="etoiles" role="img" aria-label="4 étoiles">
                             <span aria-hidden="true">★</span>
                             <span aria-hidden="true">★</span>
                             <span aria-hidden="true">★</span>
@@ -793,7 +802,7 @@
 
                     <article class="container-article-hotel">
                         <h3>Lorem Ipsum Inn</h3>
-                        <div class="etoiles" aria-label="5 étoiles">
+                        <div class="etoiles" role="img" aria-label="5 étoiles">
                             <span aria-hidden="true">★</span>
                             <span aria-hidden="true">★</span>
                             <span aria-hidden="true">★</span>
@@ -808,7 +817,7 @@
 
                     <article class="container-article-hotel">
                         <h3>Best Eastern London</h3>
-                        <div class="etoiles" aria-label="5 étoiles">
+                        <div class="etoiles" role="img" aria-label="5 étoiles">
                             <span aria-hidden="true">★</span>
                             <span aria-hidden="true">★</span>
                             <span aria-hidden="true">★</span>
@@ -823,7 +832,7 @@
 
                     <article class="container-article-hotel">
                         <h3>Plaza Resort Hotel & SPA</h3>
-                        <div class="etoiles" aria-label="4 étoiles">
+                        <div class="etoiles" role="img" aria-label="4 étoiles">
                             <span aria-hidden="true">★</span>
                             <span aria-hidden="true">★</span>
                             <span aria-hidden="true">★</span>
@@ -843,11 +852,12 @@
 
                     <hr>
 
-                    <img src="/Book-Your-Travel/assets/images/hotel/engin_akyurt-resort-4369984_1920 (1).jpg" alt="">
+                    <img src="/Book-Your-Travel/assets/images/hotel/engin_akyurt-resort-4369984_1920 (1).webp" alt=""
+                        width="800" height="534" loading="lazy">
 
                     <article class="container-article-hotel article-top">
                         <h3>Plaza Resort Hotel & SPA</h3>
-                        <div class="etoiles" aria-label="4 étoiles">
+                        <div class="etoiles" role="img" aria-label="4 étoiles">
                             <span aria-hidden="true">★</span>
                             <span aria-hidden="true">★</span>
                             <span aria-hidden="true">★</span>

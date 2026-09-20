@@ -3,11 +3,11 @@
 // IMAGES
 
 const images = [
-    "/Book-Your-Travel/assets/images/hotel/luxury-poolside-experience-where-guests-bask-opulence-cabanas (1).jpg",
-    "/Book-Your-Travel/assets/images/hotel/hhyunma-hotel-swimming-pool-1065275_1920 (1).jpg",
-    "/Book-Your-Travel/assets/images/hotel/engin_akyurt-resort-4369984_1920 (1).jpg",
-    "/Book-Your-Travel/assets/images/hotel/dreamwalker-palm-966994_1920 (1).jpg",
-    "/Book-Your-Travel/assets/images/hotel/chair-pool (1) (1).jpg"
+    "/Book-Your-Travel/assets/images/hotel/luxury-poolside-experience-where-guests-bask-opulence-cabanas (1).webp",
+    "/Book-Your-Travel/assets/images/hotel/hhyunma-hotel-swimming-pool-1065275_1920 (1).webp",
+    "/Book-Your-Travel/assets/images/hotel/engin_akyurt-resort-4369984_1920 (1).webp",
+    "/Book-Your-Travel/assets/images/hotel/dreamwalker-palm-966994_1920 (1).webp",
+    "/Book-Your-Travel/assets/images/hotel/chair-pool (1) (1).webp"
 ];
 
 
@@ -114,22 +114,22 @@ const cardsRoom = [
 
     {
         name: "Superior Double Room",
-        img: "/Book-Your-Travel/assets/images/hotel/interior-modern-comfortable-hotel-room (1).jpg",
+        img: "/Book-Your-Travel/assets/images/hotel/interior-modern-comfortable-hotel-room (1).webp",
         person: "2"
     },
     {
         name: "Deluxe Single Room",
-        img: "/Book-Your-Travel/assets/images/hotel/visualsofdana-T5pL6ciEn-I-unsplash (1).jpg",
+        img: "/Book-Your-Travel/assets/images/hotel/visualsofdana-T5pL6ciEn-I-unsplash (1).webp",
         person: "1"
     },
     {
         name: "Standard Family Room",
-        img: "/Book-Your-Travel/assets/images/hotel/interior-modern-comfortable-hotel-room (1).jpg",
+        img: "/Book-Your-Travel/assets/images/hotel/interior-modern-comfortable-hotel-room (1).webp",
         person: "3"
     },
     {
         name: "Superior Double Room",
-        img: "/Book-Your-Travel/assets/images/hotel/visualsofdana-T5pL6ciEn-I-unsplash (1).jpg",
+        img: "/Book-Your-Travel/assets/images/hotel/visualsofdana-T5pL6ciEn-I-unsplash (1).webp",
         person: "2"
     },
 ];
@@ -174,7 +174,7 @@ function afficherRooms() {
 <article class="room">
 
     
-    <img class="img-room" src="${room.img}" alt="Photo de ${room.name}">
+    <img class="img-room" src="${room.img}" alt="Photo de ${room.name}" width="584" height="533" loading="lazy">
     <div class="room-description">
         <h3>${room.name}</h3>
             <p>Prices are per room 20% VAT Included in price</p>
