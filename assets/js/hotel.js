@@ -259,9 +259,9 @@ const commentaire =
 
 function afficherCommentaires() {
 
-    if (!commentaires) {
+    if (!commentaire) {
         console.error(
-            "Le conteneur #container-commentaire est introuvable."
+            "Le conteneur #commentaire est introuvable."
         );
         return;
     }
@@ -280,9 +280,9 @@ function afficherCommentaires() {
 
                                     
                                     <figure class="left">
-                                    <img class="avatar" id="imgPerson" src="${com.imgPerson}" alt="Avatar inconnu">
+                                    <img class="avatar" src="${com.imgPerson}" alt="Avatar inconnu">
 
-                                    <address class="address-avatar" id="personReviews">
+                                    <address class="address-avatar">
                                         <p class="anonymous">${com.nameReviews}</p>
                                         <p>Solo travellerNorway</p>
                                         <p>22/06/2016</p>   
@@ -290,7 +290,7 @@ function afficherCommentaires() {
                                 </figure>
 
                                 <div class="text-commentaire">
-                                <div class="positif pro" id="positifReviews">
+                                <div class="positif pro">
                                     <p>${com.positifReviews}</p>
                                 </div>
                                 <div class="negatif con">
@@ -299,7 +299,7 @@ function afficherCommentaires() {
 
                                 </div>
                                 <hr>
-                                </figure>
+                                
                                 <hr>
 
                                 

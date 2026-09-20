@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: whitesmoke
+  background-color: whitesmoke;
 }
 
 /* ================= MAIN ================= */
@@ -43,7 +43,6 @@ main {
 
 .phone-number {
   display: flex;
-  margin-top: 30px;
   margin: 0 auto;
   text-decoration: none;
   color: #5f554c;
@@ -351,13 +350,10 @@ p strong {
 
 .footer-right-bas {
   padding-top: 30px;
-  flex-wrap: wrap;
-  /* les liens passent à la ligne */
   text-align: center;
 }
 
 .footer-left-bas {
-  flex-wrap: wrap;
   color: white;
 }
 

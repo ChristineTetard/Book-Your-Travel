@@ -18,7 +18,7 @@
 
     <!-- lien Font Awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="icon" type="image/png" href="/Book-Your-Travel/assets/images/favicon.webp">
+    <link rel="icon" type="image/webp" href="/Book-Your-Travel/assets/images/favicon.webp">
 </head>
 
 <body>
@@ -72,7 +72,7 @@
                     <label for="language" class="visually-hidden">
                         Langue
                     </label>
-                    <select class="langue" name="language" id="language">FR
+                    <select class="langue" name="language" id="language">
                         <option value="fr" aria-label="Français">FR</option>
                         <option value="en" aria-label="Anglais">EN</option>
                     </select>
@@ -80,7 +80,7 @@
                     <label for="currency" class="visually-hidden">
                         Devise
                     </label>
-                    <select class="devise" name="currency" id="currency">FR
+                    <select class="devise" name="currency" id="currency">
                         <option value="euro" aria-label="Euro">€</option>
                         <option value="livre" aria-label="Livre">£</option>
                     </select>
@@ -133,9 +133,9 @@
         <!-- Breadcrumb -->
 
         <nav aria-label="Breadcrumb">
-            <div class="breadcrumb-ol">
+            <ol class="breadcrumb-ol">
 
-                <div class="container-bread">
+                <li class="container-bread">
                     <span class="breadcrumb-li">
                         <a class="a-home" href="/Book-Your-Travel/index.html">Home</a>
                     </span>
@@ -155,9 +155,9 @@
                     <span aria-hidden="true">|</span>
 
                     <span class="breadcrumb-li">Search results</span>
-                </div>
+                </li>
 
-                <div class="container-bread bread-2">
+                <li class="container-bread bread-2">
                     <span class="breadcrumb-li-end">Back to results</span>
 
                     <span aria-hidden="true">|</span>
@@ -167,13 +167,14 @@
                             Change search
                         </a>
                     </span>
-                </div>
+                </li>
 
-            </div>
+            </ol>
         </nav>
-    </header>
 
-    <hr class="separation-2">
+        <hr class="separation-2">
+
+    </header>
 
     <!-- ================= MAIN ================= -->
     <main>
@@ -287,33 +288,17 @@
                                     Available rooms from Thurs 29 Nov 2016 to Fri 30 Nov 2016.
                                 </p>
 
-                                <a class="change-date">
+                                <span class="change-date">
                                     CHANGE DATES
-                                </a>
+                                </span>
 
                                 <h2 class="titres">Room Types</h2>
                                 <hr>
-                                <div class=" row">
+                                <div class="row">
                                     <div class="rooms-cards" id="room-card">
-                                        <!-- <img class="img-room" src="/Book-Your-Travel/assets/images/hotel/interior-modern-comfortable-hotel-room (1).jpg"
-                                        alt="Superior Double Room">
-                                    <div class="room">
-                                    <h3>Superior Double Room</h3>
-                                    <p>Prices are per room 20% VAT Included in price</p>
-                                    <p>
-                                        Non-refundableFull
-                                        English breakfast $ 24.80
-                                    </p>
-                                    
-                                    <p class="more-info">+ more info</p>
-                                    </div>
-                                
-                                <div class="room-info">
-                                    <p>Max : <span class="people">👤👤</span></p>
-                                    <p>Price: $ 55</p>
-                                    <p>Rooms: 01</p>
-                                    <a class="booking" href="/Book-Your-Travel/assets/pages/payment-process-1.html">BOOK NOW</a>
-                                </div> -->
+                                        
+                                        <!-- Les chambres sont générées avec JavaScript -->
+
                                     </div>
                                 </div>
                             </article>
@@ -350,7 +335,7 @@
                                 <hr>
 
                                 <p class="text-navbar">
-                                    Untill 12:00 hours
+                                    Until 12:00 hours
                                 </p>
 
                                 <h2 class="titres">Cancellation / Prepayment</h2>
@@ -358,7 +343,7 @@
 
                                 <p class="text-navbar">
                                     Cancellation and prepayment policies vary according to room type.
-                                    Please check the <a class="cancel">room conditions</a> when selecting your room.
+                                    Please check the <span class="cancel">room conditions</span> when selecting your room.
                                 </p>
 
                                 <h2 class="titres">Children and extra beds</h2>
@@ -389,7 +374,7 @@
 
                                 <p class="text-navbar">
                                     American Express, Visa, Euro/Mastercard,
-                                    Diners ClubThe hotel reserves the right to pre-authorise credit cards prior to
+                                    Diners Club. The hotel reserves the right to pre-authorise credit cards prior to
                                     arrival.
                                 </p>
                             </article>
@@ -587,7 +572,7 @@
                             </article>
 
                             <article>
-                                <h2 class="titres">Sports ans nature</h2>
+                                <h2 class="titres">Sports and nature</h2>
                                 <hr>
 
                                 <figure>
@@ -746,7 +731,7 @@
                     </p>
                 </aside>
 
-                <!-- Why Book wuth us ? -->
+                <!-- Why Book with us ? -->
 
                 <section class="information-box">
                     <h2>Why Book with us ?</h2>
@@ -757,7 +742,7 @@
                         <h3>Low rates</h3>
                         <p>
                             Get the best rates, or get a refund.
-                            No Booking freees. Save money !
+                            No Booking fees. Save money !
                         </p>
                     </article>
 
@@ -765,7 +750,7 @@
                         <h3>Largest Selection</h3>
                         <p>
                             140 000+ hotels worldwide,
-                            130+ airlinesOver,
+                            130+ airlines Over,
                             3 million guest reviews
                         </p>
                     </article>
@@ -773,7 +758,7 @@
                     <article class="why-book">
                         <h3>We're Always Here</h3>
                         <p>
-                            Call or email us, anytimeGet 24-hour support before,
+                            Call or email us, anytime. Get 24-hour support before,
                             during, and after your trip
                         </p>
                     </article>
@@ -880,7 +865,7 @@
 
             <div class="footer-column">
                 <h3>Book Your Travel</h3>
-                <p>1400 PennsylSUvia Ave. Washington, DC</p>
+                <p>1400 Pennsylvania Ave. Washington, DC</p>
                 <p><strong>P:</strong> 24/7 customer support: 1-555-555-5555</p>
                 <p><strong>E:</strong> booking@mail.com</p>
             </div>
