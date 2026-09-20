@@ -227,6 +227,53 @@
     min-width: 0;
 }
 
+/* =========================
+   ENCADREMENTS
+   ========================= */
+
+.information-box {
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.information-box h1,
+.information-box h2 {
+    margin-bottom: 5px;
+}
+
+.information-box p {
+    line-height: 1.6;
+}
+
+
+/* =========================
+   TELEPHONE AIDE
+   ========================= */
+
+.help-phone {
+    display: flex;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #5f554c;
+    align-items: center;
+}
+
+.help-phone-2 {
+    padding-left: 20px;
+    font-weight: bold;
+    color: rgb(1, 37, 53);
+}
+
+aside i {
+    margin-top: 10px;
+    font-size: 30px;
+    color: #29a2b4;
+}
+
 /* NOTE */
 
 .note {
