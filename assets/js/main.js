@@ -1,3 +1,19 @@
+// ===== CALENDRIER =====
+
+const checkin = document.getElementById("checkin");
+const checkout = document.getElementById("checkout");
+
+checkin.addEventListener("change", function () {
+    // La date de départ ne peut pas être avant la date d'arrivée
+    checkout.min = checkin.value;
+
+    // Si une mauvaise date avait déjà été choisie, on l'efface
+    if (checkout.value && checkout.value < checkin.value) {
+        checkout.value = "";
+    }
+});
+
+
 // ===== DESTINATION =====
 
 const destinations = [
@@ -115,8 +131,7 @@ const destinations = [
 
 // ===== CONTENEUR DES CARTES =====
 
-const cardsContainer =
-    document.getElementById("cards-container");
+const cardsContainer = document.getElementById("cards-container");
 
 // ===== AFFICHER LES DESTINATIONS =====
 
